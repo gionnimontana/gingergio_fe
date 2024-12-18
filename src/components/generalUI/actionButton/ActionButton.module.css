@@ -1,0 +1,15 @@
+.button{
+    display:inline-block;
+    border:1px solid var(--accent);
+    background: var(--accent);
+    padding:0.75em 1em;
+    display:block;
+    cursor:pointer;
+    text-align:center;
+    border-radius: 0.5rem;
+    width: 8rem;
+    margin: auto;
+}
+.button:hover{
+    background: var(--accentDark);
+}

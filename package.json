@@ -1,0 +1,25 @@
+{
+  "name": "fantabot-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.62.7",
+    "@vitejs/plugin-react": "^4.2.1",
+    "pocketbase": "^0.14.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "typescript": "^5.7.2",
+    "vite": "^5.0.12"
+  }
+}

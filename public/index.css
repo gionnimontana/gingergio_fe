@@ -1,0 +1,41 @@
+:root {
+  --accent: #982dbf;
+  --accentDark: #640488;
+  --contrast: #fec85a;
+  --backgroundLight: white;
+  --backgroundDark: black;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font:93.8% / 1.5 "Source Sans Pro", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--backgroundDark);
+  color: var(--backgroundLight);
+  font-size: 1rem;
+}
+
+/* scrollbar start */
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent); 
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--contrast); 
+}
+/* scrollbar end */
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 1.2rem;
+  }
+}

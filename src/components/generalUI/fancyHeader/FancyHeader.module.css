@@ -1,0 +1,23 @@
+.content {
+    background: var(--accent);
+    background: -webkit-linear-gradient(var(--accent), var(--contrast));
+    background: -o-linear-gradient(var(--accent), var(--contrast));
+    background: -moz-linear-gradient(var(--accent), var(--contrast));
+    background: linear-gradient(var(--accent), var(--contrast)); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 600px) {
+    .content {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .content {
+        font-size: 3.5rem;
+    }
+}
