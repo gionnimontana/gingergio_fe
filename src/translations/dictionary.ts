@@ -9,6 +9,10 @@ export const dictionary = {
         en: 'Probiotics beverages',
         it: 'Bevande probiotiche'
     },
+    buybutton_label: {
+        en: 'Shop',
+        it: 'Acquista'
+    },
     home_section1_title: {
         en: 'Healthy and sustainable drinks',
         it: 'Bevande sane e sostenibili'

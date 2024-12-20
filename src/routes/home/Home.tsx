@@ -31,7 +31,7 @@ export const Home = () => {
                 </div>
             </div>
             <div className={s.stickyFooter}>
-                <ActionButton label='Acquista'/>
+                <ActionButton label={T('buybutton_label')}/>
             </div>
             <Footer/>
         </div>
