@@ -1,0 +1,21 @@
+.container {
+    margin: 2rem 0.5rem;
+}
+
+.content {
+    margin: 0.5rem 0rem;
+    text-align: justify;
+}
+
+@media (min-width: 600px) {
+    .container {
+        margin: 2rem 3rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .container {
+        margin: 2rem 4.5rem;
+    }
+}
+  

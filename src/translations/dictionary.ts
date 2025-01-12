@@ -75,6 +75,14 @@ export const dictionary = {
         en: 'how we do it (tools and results): Here are written all the great possibilities that Lionberry can offer in the realization of magnificent web portals, aesthetically modern and suitable for viewing on all devices, secure and complete ordered code, super connected with social media and search engines',
         it: 'come lo facciamo (strumenti e risultato): Qui vanno scritte tutte le grandiosi possibilit&#224; che Lionberry pu&#242; offrire nella realizzazione di magnifici portali web, esteticamente moderni e adatti alla visualizzazione su tutti i dispositivi, codice ordinato sicuro e completo, super connessi con i social media e i motori di ricerca'
     },
+    market_section1_title: {
+        en: 'Read here, if you have never purchased before',
+        it: 'Leggi qui, se non hai mai acquistato prima'
+    },
+    market_section1_text: {
+        en: `I'm a little local producer, so I can't offer you the same prices as the big supermarkets. But I can offer you a better product, made with love and care, and a better service, with a direct relationship with me, the producer. I hope you will appreciate the difference and support local producers like me.`,
+        it: 'Sono un piccolo produttore locale, quindi non posso offrirti gli stessi prezzi dei grandi supermercati. Ma posso offrirti un prodotto migliore, fatto con amore e cura, e un servizio migliore, con un rapporto diretto con me, il produttore. Spero apprezzerai la differenza e supporterai produttori locali come me.'
+    },
     footer_text: {
         en: 'Ginger Gio - Probiotics beverages - powered by LionBerry',
         it: undefined
