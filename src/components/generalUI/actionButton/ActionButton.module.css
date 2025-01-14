@@ -2,14 +2,24 @@
     display:inline-block;
     border:1px solid var(--accent);
     background: var(--accent);
-    padding:0.75em 1em;
+    padding:0.75em 0em;
     display:block;
     cursor:pointer;
     text-align:center;
     border-radius: 0.5rem;
-    width: 8rem;
+    width: 10rem;
     margin: auto;
+    font-size: 1rem;
+    color: var(--backgroundLight);
 }
 .button:hover{
     background: var(--accentDark);
 }
+.backgroundContrast{
+    background: var(--contrast);
+}
+.backgroundContrast:hover{
+    background: var(--contrastDark);
+}
+
+  

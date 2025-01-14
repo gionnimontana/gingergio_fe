@@ -27,14 +27,6 @@
   padding: 0.5rem;
 }
 
-.stickyFooter {
-  position: sticky;
-  bottom: 0;
-  padding: 0.5rem;
-  background-color: var(--backgroundDark);
-  box-shadow: 0px -8px 10px 0px var(--backgroundLight);
-}
-
 @media (min-width: 600px) {
   .logo {
     font-size: 4rem;

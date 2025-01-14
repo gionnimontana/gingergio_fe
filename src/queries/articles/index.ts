@@ -1,5 +1,4 @@
 import { useQuery } from "@tanstack/react-query";
-import { Article } from "types/articles";
 import { apiEndpoints } from "../../constants/apiEndpoints";
 import { queryCacheTime } from "../../constants/settings";
 import { pb } from "../../helpers/pb";
@@ -14,7 +13,7 @@ export function useArticle(leagueId: string | undefined, category: 'results', da
             });
             const data = await response as any
             const calendar = data
-            if (calendar.items && calendar.items.length > 0) return calendar.items[0] as Article
+            if (calendar.items && calendar.items.length > 0) return calendar.items[0]
             return undefined
         }, 
         gcTime: queryCacheTime, 

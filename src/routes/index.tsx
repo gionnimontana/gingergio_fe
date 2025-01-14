@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { routes } from "../constants/routes";
 import { Home } from "./home/Home";
 import { Market } from "./market/Market";
+import { Basket } from "./basket/Basket";
   
 export const router = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ export const router = createBrowserRouter([
   {
     path: routes.Market,
     element: <Market/>,
+  },
+  {
+    path: routes.Basket,
+    element: <Basket/>,
   },
   {
     path: '*',

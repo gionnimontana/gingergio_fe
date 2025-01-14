@@ -83,6 +83,26 @@ export const dictionary = {
         en: `I'm a little local producer, so I can't offer you the same prices as the big supermarkets. But I can offer you a better product, made with love and care, and a better service, with a direct relationship with me, the producer. I hope you will appreciate the difference and support local producers like me.`,
         it: 'Sono un piccolo produttore locale, quindi non posso offrirti gli stessi prezzi dei grandi supermercati. Ma posso offrirti un prodotto migliore, fatto con amore e cura, e un servizio migliore, con un rapporto diretto con me, il produttore. Spero apprezzerai la differenza e supporterai produttori locali come me.'
     },
+    basket_section1_title: {
+        en: 'Your basket',
+        it: 'Il tuo carrello'
+    },
+    basket_section1_text: {
+        en: 'Here you can see the products you have added to your basket. When you are ready, you can proceed to checkout.',
+        it: 'Qui puoi vedere i prodotti che hai aggiunto al tuo carrello. Quando sei pronto, puoi procedere al pagamento.'
+    },
+    basketStickyFooter_button1: {
+        en: 'Continue shopping',
+        it: 'Continua lo shopping'
+    },
+    basketStickyFooter_button2: {
+        en: 'Checkout',
+        it: 'Vai al checkout'
+    },
+    marketStickyFooter_label: {
+        en: 'Go to basket',
+        it: 'Vai al carrello'
+    },
     footer_text: {
         en: 'Ginger Gio - Probiotics beverages - powered by LionBerry',
         it: undefined
@@ -90,5 +110,9 @@ export const dictionary = {
     footer_langswitch_text: {
         en: 'Passa alla versione italiana',
         it: 'Switch to english version'
-    }, 
+    },
+    remove_button: {
+        en: 'Remove',
+        it: 'Rimuovi'
+    },
 };

@@ -1,12 +1,12 @@
-import FancyHeader from '../../components/generalUI/fancyHeader/FancyHeader';
-import ActionButton from '../../components/generalUI/actionButton/ActionButton';
-import useTranslations from '../../translations/useTranslations';
-import s from './Home.module.css';
-import Footer from '../../components/footer/Footer';
 import { useNavigate } from 'react-router-dom';
 import { routes } from "../../constants/routes";
+import useTranslations from '../../translations/useTranslations';
+import ActionButton from '../../components/generalUI/actionButton/ActionButton';
+import Footer from '../../components/footer/Footer';
 import Logo from '../../components/generalUI/logo/Logo';
-import FancyTextBox from '../../components/generalUI/fancyTextBox/FancyTextBox';
+import FancySection from '../../components/generalUI/FancySection/FancySection';
+import StickyFooter from '../../components/generalUI/stickyFooter/StickyFooter';
+import s from './Home.module.css';
 
 export const Home = () => {
 
@@ -17,7 +17,7 @@ export const Home = () => {
     }
 
     return (
-        <div>
+        <>
             <div className={s.banner}>
                 <div className={s.content}>
                     <Logo className={s.logo}/>
@@ -25,15 +25,14 @@ export const Home = () => {
                 </div>
             </div>
             <div className={s.main}>
-                <FancyTextBox header={T('home_section1_title')} content={T('home_section1_text')}/>
-                <FancyTextBox header={T('home_section2_title')} content={T('home_section2_text')}/>
-                <FancyTextBox header={T('home_section3_title')} content={T('home_section3_text')}/>
+                <FancySection header={T('home_section1_title')} content={T('home_section1_text')}/>
+                <FancySection header={T('home_section2_title')} content={T('home_section2_text')}/>
+                <FancySection header={T('home_section3_title')} content={T('home_section3_text')}/>
             </div>
-            <div className={s.stickyFooter}>
+            <StickyFooter>
                 <ActionButton label={T('buybutton_label')} onClick={goToMarket}/>
-            </div>
+            </StickyFooter>
             <Footer/>
-        </div>
-        
+        </>
     )
 }
