@@ -1,6 +1,6 @@
 import useBasket from '../../helpers/useBasket';
 import Page from '../../components/page/Page';
-import FancySection from '../../components/generalUI/FancySection/FancySection';
+import FancySection from '../../components/generalUI/fancySection/FancySection';
 import useTranslations from '../../translations/useTranslations';
 import s from './Basket.module.css';
 import BasketStickyFooter from './components/basketStickyFooter/BasketStickyFooter';

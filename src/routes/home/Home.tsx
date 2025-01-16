@@ -4,7 +4,7 @@ import useTranslations from '../../translations/useTranslations';
 import ActionButton from '../../components/generalUI/actionButton/ActionButton';
 import Footer from '../../components/footer/Footer';
 import Logo from '../../components/generalUI/logo/Logo';
-import FancySection from '../../components/generalUI/FancySection/FancySection';
+import FancySection from '../../components/generalUI/fancySection/FancySection';
 import StickyFooter from '../../components/generalUI/stickyFooter/StickyFooter';
 import s from './Home.module.css';
 

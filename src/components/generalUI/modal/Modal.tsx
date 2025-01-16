@@ -1,4 +1,3 @@
-import { AppScreen } from '../appScreen/AppScreen'
 import s from './Modal.module.css'
 
 interface Props {
@@ -10,20 +9,18 @@ interface Props {
 export const Modal = ({ children, onClose, loading }: Props) => {
     return (
         <div className={s.container}>
-            <AppScreen loading={loading}>
-                {onClose 
-                    ? (
-                        <button 
-                            onClick={onClose} 
-                            className={s.closeButton}
-                        >
-                            X
-                        </button> 
-                        )
-                    : null
-                }
-                {children}
-            </AppScreen>
+            {onClose 
+                ? (
+                    <button 
+                        onClick={onClose} 
+                        className={s.closeButton}
+                    >
+                        X
+                    </button> 
+                    )
+                : null
+            }
+            {children}
         </div>
     )
 }
