@@ -4,7 +4,8 @@ import { makeObservable } from "./makeObservable";
 
 const basketKey = 'basket';
 
-const basketStore = makeObservable([]);
+const initialBasket = localStorage.getItem(basketKey) ? JSON.parse(localStorage.getItem(basketKey)!) : [];
+const basketStore = makeObservable(initialBasket);
 
 const useBasket = () => {
     const [basket, setBasket] = useState<BasketItem[]>(basketStore.get());
