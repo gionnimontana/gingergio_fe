@@ -1,4 +1,4 @@
-# <center>:mag_right: Fantabot client :alien:</center>
+# <center>:herb: GingerGio Website :bug:</center>
 
 This project contains a [Progressive Web Application](https://web.dev/what-are-pwas/) written in React/Typescript.
 
