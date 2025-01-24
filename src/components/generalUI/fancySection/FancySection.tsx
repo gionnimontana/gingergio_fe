@@ -3,17 +3,23 @@ import s from './FancySection.module.css';
 
 interface Props {
     header?: string
-    content?: string | React.ReactNode
+    content?: string | string[] | React.ReactNode
     children?: React.ReactNode
 }
 
-const  FancySection = (props: Props) => {
+const FancySection = ({ header, content, children }: Props) => {
+
+  const contentIsArray = Array.isArray(content)
 
   return (
     <div className={s.container}>
-        {props.header ? <FancyHeader content={props.header}/> : null}
-        {props.content ? <div className={s.content}>{props.content}</div> : null}
-        {props.children}
+        {header ? <FancyHeader content={header}/> : null}
+        {content 
+          ? contentIsArray 
+            ? content.map((item, index) => <div className={s.content} key={index}>{item}</div>)
+           : <div className={s.content}>{content}</div> 
+        : null}
+        {children}
     </div>
   );
 }

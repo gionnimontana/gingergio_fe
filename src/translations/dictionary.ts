@@ -17,9 +17,17 @@ export const dictionary = {
         en: 'Healthy and sustainable drinks',
         it: 'Bevande sane e sostenibili'
     },
-    home_section1_text: {
-        en: 'Nice to meet you, I am Ginger Gio The father of a unique line of probiotic beverages, created with passion and dedication. With my products, I want to offer you a healthy, tasty and completely natural alternative to traditional soft drinks and alcoholic beverages. Each bottle is a journey to well-being, one sip at a time.',
-        it: 'Piacere, sono Ginger Gio Il padre di una linea di bevande probiotiche uniche, create con passione e dedizione. Con i miei prodotti, voglio offrirti un’alternativa salutare, gustosa e completamente naturale alle bibite gassate tradizionali e alle bevande alcoliche. Ogni bottiglia è un viaggio verso il benessere, un sorso alla volta.'
+    home_section1a_text: {
+        en: 'Nice to meet you, I am Ginger Gio The father of a unique line of probiotic beverages, created with passion and dedication. With my products, I want to offer you a healthy, fresh and tasty alternative to traditional soft drinks and alcoholic beverages.',
+        it: 'Piacere, sono Ginger Gio Il padre di una linea di bevande probiotiche uniche, create con passione e dedizione. Con i miei prodotti, voglio offrirti un’alternativa salutare, fresca e gustosa alle bibite gassate tradizionali e alle bevande alcoliche.'
+    },
+    home_section1b_text: {
+        it: 'Le mie creazioni nascono dal lievito madre di zenzero, il famoso ginger bug, un ingrediente fermentato che garantisce un’effervescenza naturale e una carica di probiotici benefici. Non solo deliziose, ma anche alleate per la tua salute intestinale e il tuo equilibrio quotidiano.',
+        en: 'My creations are born from the ginger mother yeast, the famous ginger bug, a fermented ingredient that guarantees a natural effervescence and a load of beneficial probiotics. Not only delicious, but also allies for your intestinal health and your daily balance.'
+    },
+    home_section1c_text: {
+        it: 'Tutto ciò che produco è fatto con amore e attenzione: fermentazione lenta, lista di ingredienti corta composta esclusivamente da prodotti freschi, di alta qualità, al minimo grado di lavorazione. Il risultato? Bevande sane, genuine e ricche di gusto, che rispettano la tua salute e l’ambiente.',
+        en: 'Everything I produce is made with love and attention: slow fermentation, short ingredient list composed exclusively of fresh, high-quality products, with minimal processing. The result? Healthy, genuine and tasty drinks, which respect your health and the environment.'
     },
     home_section2_title: {
         en: 'Many bacteria, but the good ones!',

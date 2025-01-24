@@ -25,7 +25,12 @@ export const Home = () => {
                 </div>
             </div>
             <div className={s.main}>
-                <FancySection header={T('home_section1_title')} content={T('home_section1_text')}/>
+                <div className={s.firstSection}>
+                    <img src="/gingergio_face.webp" alt="Ginger Gio" className={s.firstSectionImage}/>
+                    <FancySection
+                        content={[T('home_section1a_text'), T('home_section1b_text'), T('home_section1c_text')]}
+                    />
+                </div>
                 <FancySection header={T('home_section2_title')} content={T('home_section2_text')}/>
                 <FancySection header={T('home_section3_title')} content={T('home_section3_text')}/>
             </div>
