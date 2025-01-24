@@ -18,8 +18,8 @@ export const dictionary = {
         it: 'Bevande sane e sostenibili'
     },
     home_section1_text: {
-        en: 'what we do: here we present what we do, consulting and development for companies regarding lead generation, websites, ecommerce, web application.',
-        it: 'che cosa facciamo: qui va presentato quello che facciamo, consulenza e sviluppo per aziende riguardo lead generation, websites, ecommerce, web application.'
+        en: 'Nice to meet you, I am Ginger Gio The father of a unique line of probiotic beverages, created with passion and dedication. With my products, I want to offer you a healthy, tasty and completely natural alternative to traditional soft drinks and alcoholic beverages. Each bottle is a journey to well-being, one sip at a time.',
+        it: 'Piacere, sono Ginger Gio Il padre di una linea di bevande probiotiche uniche, create con passione e dedizione. Con i miei prodotti, voglio offrirti un’alternativa salutare, gustosa e completamente naturale alle bibite gassate tradizionali e alle bevande alcoliche. Ogni bottiglia è un viaggio verso il benessere, un sorso alla volta.'
     },
     home_section2_title: {
         en: 'Many bacteria, but the good ones!',
@@ -27,6 +27,14 @@ export const dictionary = {
     },
     home_section2_text: {
         en: 'how we do it (approach): Here we need to specify how our approach is step-by-step as we do not see package solutions but tailor a solution and progressive, we start with a contained budget and continue to try combinations of solutions until we find the solutions with the highest ROI and then we tailor on those progressively extending the investment',
+        it: 'Le mie creazioni nascono dal lievito madre di zenzero, il famoso ginger bug, un ingrediente fermentato che garantisce un’effervescenza naturale e una carica di probiotici benefici. Non solo deliziose, ma anche alleate per la tua salute intestinale e il tuo equilibrio quotidiano.'
+    },
+    home_section3_title: {
+        en: 'The best, in my opinion',
+        it: 'Le migliori, secondo me'
+    },
+    home_section3_text: {
+        en: 'how we do it (tools and results): Here are written all the great possibilities that Lionberry can offer in the realization of magnificent web portals, aesthetically modern and suitable for viewing on all devices, secure and complete ordered code, super connected with social media and search engines',
         it: `Il ginger bug è una coltura mista composta principalmente da lieviti selvatici e batteri lattici che si sviluppano naturalmente sullo zenzero fresco e nell'ambiente. Ecco i microorganismi principali che probabilmente lo compongono
         1. Lieviti selvatici
         Specie comuni: Saccharomyces spp., Candida spp., Pichia spp.
@@ -66,14 +74,6 @@ export const dictionary = {
         Riduzione del colesterolo: Alcuni ceppi di batteri lattici possono contribuire a ridurre i livelli di colesterolo LDL.
         7. Supporto alla salute mentale
         Asse intestino-cervello: I probiotici hanno dimostrato di influire positivamente sull’umore e sulla gestione dello stress, grazie alla produzione di neurotrasmettitori come la serotonina.`
-    },
-    home_section3_title: {
-        en: 'The best, in my opinion',
-        it: 'Le migliori, secondo me'
-    },
-    home_section3_text: {
-        en: 'how we do it (tools and results): Here are written all the great possibilities that Lionberry can offer in the realization of magnificent web portals, aesthetically modern and suitable for viewing on all devices, secure and complete ordered code, super connected with social media and search engines',
-        it: 'come lo facciamo (strumenti e risultato): Qui vanno scritte tutte le grandiosi possibilit&#224; che Lionberry pu&#242; offrire nella realizzazione di magnifici portali web, esteticamente moderni e adatti alla visualizzazione su tutti i dispositivi, codice ordinato sicuro e completo, super connessi con i social media e i motori di ricerca'
     },
     market_section1_title: {
         en: 'Read here, if you have never purchased before',
