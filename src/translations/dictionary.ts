@@ -46,16 +46,16 @@ export const dictionary = {
         en: 'The ginger bug is a mixed culture composed mainly of wild yeasts and lactic bacteria that develop naturally on fresh ginger and in the environment. Here are the main microorganisms that compose it'
     },
     home_section3b_text: {
-        it: '1. Lieviti selvatici: Saccharomyces spp., Candida spp., Pichia spp. Funzione: Consumano gli zuccheri presenti nella miscela per produrre alcol (etanolo) e anidride carbonica (CO₂), responsabile della frizzantezza. Forniscono il "motore" della fermentazione alcolica.',
-        en: '1. Wild yeasts: Saccharomyces spp., Candida spp., Pichia spp. Function: They consume the sugars present in the mixture to produce alcohol (ethanol) and carbon dioxide (CO₂), responsible for the effervescence. They provide the "engine" of alcoholic fermentation.'
+        it: 'Lieviti selvatici: Saccharomyces spp., Candida spp., Pichia spp. Funzione: Consumano gli zuccheri presenti nella miscela per produrre alcol (etanolo) e anidride carbonica (CO₂), responsabile della frizzantezza. Forniscono il "motore" della fermentazione alcolica.',
+        en: 'Wild yeasts: Saccharomyces spp., Candida spp., Pichia spp. Function: They consume the sugars present in the mixture to produce alcohol (ethanol) and carbon dioxide (CO₂), responsible for the effervescence. They provide the "engine" of alcoholic fermentation.'
     },
     home_section3c_text: {
-        it: '2. Batteri lattici (LAB - Lactic Acid Bacteria): Lactobacillus spp., Leuconostoc spp. Funzione: Convertono gli zuccheri in acido lattico, che abbassa il pH e conferisce un sapore leggermente acido. Inibiscono la crescita di batteri indesiderati grazie all\'acidificazione del mezzo.',
-        en: '2. Lactic bacteria (LAB - Lactic Acid Bacteria): Lactobacillus spp., Leuconostoc spp. Function: They convert sugars into lactic acid, which lowers the pH and gives a slightly acidic flavor. They inhibit the growth of unwanted bacteria thanks to the acidification of the medium.'
+        it: 'Batteri lattici (LAB - Lactic Acid Bacteria): Lactobacillus spp., Leuconostoc spp. Funzione: Convertono gli zuccheri in acido lattico, che abbassa il pH e conferisce un sapore leggermente acido. Inibiscono la crescita di batteri indesiderati grazie all\'acidificazione del mezzo.',
+        en: 'Lactic bacteria (LAB - Lactic Acid Bacteria): Lactobacillus spp., Leuconostoc spp. Function: They convert sugars into lactic acid, which lowers the pH and gives a slightly acidic flavor. They inhibit the growth of unwanted bacteria thanks to the acidification of the medium.'
     },
     home_section3d_text: {
-        it: '3. Batteri acetici (in misura minore): Acetobacter spp. Funzione: In presenza di ossigeno, convertono l\'etanolo (prodotto dai lieviti) in acido acetico. Contribuiscono al profilo aromatico leggermente pungente.',
-        en: '3. Acetic bacteria (to a lesser extent): Acetobacter spp. Function: In the presence of oxygen, they convert ethanol (produced by yeasts) into acetic acid. They contribute to the slightly pungent aromatic profile.'
+        it: 'Batteri acetici (in misura minore): Acetobacter spp. Funzione: In presenza di ossigeno, convertono l\'etanolo (prodotto dai lieviti) in acido acetico. Contribuiscono al profilo aromatico leggermente pungente.',
+        en: 'Acetic bacteria (to a lesser extent): Acetobacter spp. Function: In the presence of oxygen, they convert ethanol (produced by yeasts) into acetic acid. They contribute to the slightly pungent aromatic profile.'
     },
     home_section4_title: {
         it: 'Benefici per la salute',
@@ -66,32 +66,32 @@ export const dictionary = {
         en: 'Interaction between microorganisms: Yeasts and lactic bacteria work in symbiosis. Yeasts produce ethanol and carbon dioxide, creating a favorable environment for lactic bacteria. Lactic bacteria lower the pH, protecting the ginger bug from unwanted contaminations. This interaction creates a balanced fermentation, resulting in a slightly acidic and effervescent mixture.'
     },
     home_section4b_text: {
-        it: '1. Supporto alla salute intestinale: Equilibrio del microbiota: I batteri lattici (Lactobacillus, Leuconostoc) possono contribuire a mantenere un equilibrio sano nel microbiota intestinale, riducendo la presenza di batteri patogeni. Facilitazione della digestione: Questi batteri aiutano a digerire più facilmente alcuni nutrienti e possono ridurre gonfiore e gas intestinali.',
-        en: '1. Support for intestinal health: Microbiota balance: Lactic bacteria (Lactobacillus, Leuconostoc) can help maintain a healthy balance in the intestinal microbiota, reducing the presence of pathogenic bacteria. Facilitation of digestion: These bacteria help digest some nutrients more easily and can reduce bloating and intestinal gas.'
+        it: 'Supporto alla salute intestinale: Equilibrio del microbiota: I batteri lattici (Lactobacillus, Leuconostoc) possono contribuire a mantenere un equilibrio sano nel microbiota intestinale, riducendo la presenza di batteri patogeni. Facilitazione della digestione: Questi batteri aiutano a digerire più facilmente alcuni nutrienti e possono ridurre gonfiore e gas intestinali.',
+        en: 'Support for intestinal health: Microbiota balance: Lactic bacteria (Lactobacillus, Leuconostoc) can help maintain a healthy balance in the intestinal microbiota, reducing the presence of pathogenic bacteria. Facilitation of digestion: These bacteria help digest some nutrients more easily and can reduce bloating and intestinal gas.'
     },
     home_section4c_text: {
-        it: '2. Rafforzamento del sistema immunitario: Produzione di acido lattico: L\'acido lattico creato dai batteri lattici abbassa il pH nell\'intestino, creando un ambiente sfavorevole per i microorganismi dannosi. Stimolazione immunitaria: I batteri probiotici interagiscono con il sistema immunitario intestinale, migliorandone la risposta e aiutando a prevenire infezioni.',
-        en: '2. Strengthening the immune system: Production of lactic acid: The lactic acid created by lactic bacteria lowers the pH in the intestine, creating an unfavorable environment for harmful microorganisms. Immune stimulation: Probiotic bacteria interact with the intestinal immune system, improving its response and helping to prevent infections.'
+        it: 'Rafforzamento del sistema immunitario: Produzione di acido lattico: L\'acido lattico creato dai batteri lattici abbassa il pH nell\'intestino, creando un ambiente sfavorevole per i microorganismi dannosi. Stimolazione immunitaria: I batteri probiotici interagiscono con il sistema immunitario intestinale, migliorandone la risposta e aiutando a prevenire infezioni.',
+        en: 'Strengthening the immune system: Production of lactic acid: The lactic acid created by lactic bacteria lowers the pH in the intestine, creating an unfavorable environment for harmful microorganisms. Immune stimulation: Probiotic bacteria interact with the intestinal immune system, improving its response and helping to prevent infections.'
     },
     home_section4d_text: {
-        it: '3. Miglior assorbimento dei nutrienti: Minerali più biodisponibili: La fermentazione può rendere alcuni minerali, come ferro, magnesio e zinco, più facilmente assorbibili dall\'organismo. Produzione di vitamine: Alcuni batteri lattici producono vitamine del gruppo B durante la fermentazione.',
-        en: '3. Better nutrient absorption: More bioavailable minerals: Fermentation can make some minerals, such as iron, magnesium and zinc, more easily absorbed by the body. Vitamin production: Some lactic bacteria produce B vitamins during fermentation.'
+        it: 'Miglior assorbimento dei nutrienti: Minerali più biodisponibili: La fermentazione può rendere alcuni minerali, come ferro, magnesio e zinco, più facilmente assorbibili dall\'organismo. Produzione di vitamine: Alcuni batteri lattici producono vitamine del gruppo B durante la fermentazione.',
+        en: 'Better nutrient absorption: More bioavailable minerals: Fermentation can make some minerals, such as iron, magnesium and zinc, more easily absorbed by the body. Vitamin production: Some lactic bacteria produce B vitamins during fermentation.'
     },
     home_section4e_text: {
-        it: '4. Riduzione dell’infiammazione: Studi hanno dimostrato che i probiotici possono ridurre marcatori infiammatori nel corpo, contribuendo a migliorare condizioni infiammatorie croniche come la sindrome dell\'intestino irritabile (IBS) o altre malattie gastrointestinali.',
-        en: '4. Reduction of inflammation: Studies have shown that probiotics can reduce inflammatory markers in the body, helping to improve chronic inflammatory conditions such as irritable bowel syndrome (IBS) or other gastrointestinal diseases.'
+        it: 'Riduzione dell’infiammazione: Studi hanno dimostrato che i probiotici possono ridurre marcatori infiammatori nel corpo, contribuendo a migliorare condizioni infiammatorie croniche come la sindrome dell\'intestino irritabile (IBS) o altre malattie gastrointestinali.',
+        en: 'Reduction of inflammation: Studies have shown that probiotics can reduce inflammatory markers in the body, helping to improve chronic inflammatory conditions such as irritable bowel syndrome (IBS) or other gastrointestinal diseases.'
     },
     home_section4f_text: {
-        it: '5. Effetto antiossidante: I composti prodotti durante la fermentazione, come i polifenoli, possono avere un effetto antiossidante, proteggendo le cellule dai danni causati dai radicali liberi.',
-        en: '5. Antioxidant effect: Compounds produced during fermentation, such as polyphenols, can have an antioxidant effect, protecting cells from damage caused by free radicals.'
+        it: 'Effetto antiossidante: I composti prodotti durante la fermentazione, come i polifenoli, possono avere un effetto antiossidante, proteggendo le cellule dai danni causati dai radicali liberi.',
+        en: 'Antioxidant effect: Compounds produced during fermentation, such as polyphenols, can have an antioxidant effect, protecting cells from damage caused by free radicals.'
     },
     home_section4g_text: {
-        it: '6. Miglioramento del metabolismo: Regolazione del metabolismo degli zuccheri: I probiotici possono aiutare a regolare i livelli di zucchero nel sangue migliorando la sensibilità all\'insulina. Riduzione del colesterolo: Alcuni ceppi di batteri lattici possono contribuire a ridurre i livelli di colesterolo LDL.',
-        en: '6. Metabolism improvement: Sugar metabolism regulation: Probiotics can help regulate blood sugar levels by improving insulin sensitivity. Cholesterol reduction: Some strains of lactic bacteria can help reduce LDL cholesterol levels.'
+        it: 'Miglioramento del metabolismo: Regolazione del metabolismo degli zuccheri: I probiotici possono aiutare a regolare i livelli di zucchero nel sangue migliorando la sensibilità all\'insulina. Riduzione del colesterolo: Alcuni ceppi di batteri lattici possono contribuire a ridurre i livelli di colesterolo LDL.',
+        en: 'Metabolism improvement: Sugar metabolism regulation: Probiotics can help regulate blood sugar levels by improving insulin sensitivity. Cholesterol reduction: Some strains of lactic bacteria can help reduce LDL cholesterol levels.'
     },
     home_section4h_text: {
-        it: '7. Supporto alla salute mentale: Asse intestino-cervello: I probiotici hanno dimostrato di influire positivamente sull’umore e sulla gestione dello stress, grazie alla produzione di neurotrasmettitori come la serotonina.',
-        en: '7. Support for mental health: Gut-brain axis: Probiotics have been shown to positively influence mood and stress management, thanks to the production of neurotransmitters such as serotonin.'
+        it: 'Supporto alla salute mentale: Asse intestino-cervello: I probiotici hanno dimostrato di influire positivamente sull’umore e sulla gestione dello stress, grazie alla produzione di neurotrasmettitori come la serotonina.',
+        en: 'Support for mental health: Gut-brain axis: Probiotics have been shown to positively influence mood and stress management, thanks to the production of neurotransmitters such as serotonin.'
     },
     market_section1_text: {
         it: 'Sono un piccolo produttore locale e non posso competere con i prezzi dei grandi supermercati, ma quello che posso offrirti è qualcosa di unico. Ogni bottiglia nasce dalla mia passione, con cura per i dettagli e con un impegno totale verso la qualità. La mia arma è la massima tracciabilità e trasparenza: sul mio sito puoi scoprire tutto, dai costi delle materie prime al processo produttivo, fino agli imballaggi e alla spedizione. Inoltre, qui hai la possibilità di avere un rapporto diretto con me, il produttore, per ogni domanda o consiglio. Spero che tu possa apprezzare questa differenza e scegliere di supportare chi mette il cuore e la verità in ogni passo del proprio lavoro 💛',
