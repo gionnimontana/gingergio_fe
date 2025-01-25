@@ -15,7 +15,7 @@ export const Market = () => {
         <Page
             outsideChilds={<MarketStickyFooter/>}
         >
-            <FancySection content={T('market_section1_text')}/>
+            <FancySection content={T('market_section1_text')} className={s.extrapadding}/>
             <ScrollRestoration/>
             <div className={s.productsContainer}>
                 <ProductBox 

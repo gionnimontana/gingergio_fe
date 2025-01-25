@@ -9,16 +9,18 @@ interface Props {
         alt?: string,
         right?: boolean
     }
+    className?: string
 }
 
-const FancySection = ({ header, content, img }: Props) => {
+const FancySection = ({ header, content, img, className }: Props) => {
 
   const contentIsArray = Array.isArray(content)
   const imgIsRight = img && img.right
   const imageClass = imgIsRight ? `${s.image} ${s.imageRight}` : s.image
+  const containerClass = s.container + (className ? ' ' + className : '')
 
   return (
-    <div className={s.container}>
+    <div className={containerClass}>
         {header ? <FancyHeader content={header}/> : null}
         <div className={s.innerContainer}>
           {img ? (
