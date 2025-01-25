@@ -137,6 +137,18 @@ export const dictionary = {
         it: 'House Pride è quella con dolcezza media, ma non lasciarti ingannare: la sua nota piccante si farà sentire! È il drink ideale cerca un’alternativa sana e gustosa alle bibite gassate tradizionali, il drink ideale per chi cerca una bevanda naturale e vibrante, perfetta per dare una sferzata di energia alla tua giornata o per accompagnare i momenti di relax.',
         en: 'House Pride is the one with medium sweetness, but don\'t be fooled: its spicy note will be felt! It is the ideal drink looking for a healthy and tasty alternative to traditional soft drinks, House Pride is an explosion of flavors and benefits for your daily well-being.'
     },
+    house_pride_ingrediens: {
+        it: 'Ingredienti: infuso di zenzero, ginger bug, zucchero, succo di limone.',
+        en: 'Ingredients: ginger infusion, ginger bug, sugar, lemon juice.'
+    },
+    house_pride_nutritional: {
+        it: 'Valori nutrizionali per 100ml: Energia 23 kcal, Grassi 0g, Carboidrati 5.5g, di cui zuccheri 5.5g, Proteine 0g, Sale 0g.',
+        en: 'Nutritional values per 100ml: Energy 23 kcal, Fat 0g, Carbohydrates 5.5g, of which sugars 5.5g, Proteins 0g, Salt 0g.'
+    },
+    fresh_drinks_conservation: {
+        it: 'Modalità di conservazione: Conservare in frigorifero tra 2°C e 6°C. Una volta aperto, consumare entro 3 giorni.',
+        en: 'Storage: Store in the refrigerator between 2°C and 6°C. Once opened, consume within 3 days.'
+    },
     zen_cola_desc1: {
         it: 'Zen Cola è la mia interpretazione di una cola che guarda al benessere. Questa bevanda nasce da un infuso pregiato di tè Pu-erh dello Yunnan, arricchito dal tocco effervescente del ginger bug, zucchero e una spruzzata di succo di limone per un equilibrio di sapori unico.',
         en: 'Zen Cola is my interpretation of a cola that looks at well-being. This drink comes from a precious infusion of Yunnan Pu-erh tea, enriched by the effervescent touch of the ginger bug, sugar and a splash of lemon juice for a unique balance of flavors.'
@@ -145,6 +157,14 @@ export const dictionary = {
         it: 'Tra le mie creazioni, Zen Cola è la più dolce, ma sempre con moderazione: il suo contenuto di zucchero è sensibilmente inferiore rispetto alle bibite gassate tradizionali, per offrirti un’alternativa più sana senza rinunciare al gusto. Il tè Pu-erh le dona una profondità aromatica e un carattere inconfondibile, rendendola perfetta per chi cerca qualcosa di diverso, naturale e appagante. Zen Cola è il mio modo di portare un pizzico di zen nel tuo bicchiere, ogni giorno.',
         en: 'Among my creations, Zen Cola is the sweetest, but always in moderation: its sugar content is significantly lower than traditional soft drinks, to offer you a healthier alternative without sacrificing taste. Pu-erh tea gives it an aromatic depth and an unmistakable character, making it perfect for those looking for something different, natural and satisfying. Zen Cola is my way of bringing a touch of zen to your glass, every day.'
     },
+    zen_cola_ingrediens: {
+        it: 'Ingredienti: infuso di tè Pu-erh, ginger bug, zucchero, succo di limone.',
+        en: 'Ingredients: Pu-erh tea infusion, ginger bug, sugar, lemon juice.'
+    },
+    zen_cola_nutritional: {
+        it: 'Valori nutrizionali per 100ml: Energia 28 kcal, Grassi 0g, Carboidrati 7, di cui zuccheri 7g, Proteine 0g, Sale 0g.',
+        en: 'Nutritional values per 100ml: Energy 28 kcal, Fat 0g, Carbohydrates 7, of which sugars 7g, Proteins 0g, Salt 0g.'
+    },
     hojicha_desc1: {
         it: 'Hojicha è la mia bevanda più raffinata e minimale, pensata per chi ama i sapori autentici e poco dolci. Realizzata con un infuso di tè Hojicha – un tè verde giapponese tostato, noto per il suo gusto delicato e leggermente affumicato – questa bevanda è arricchita dal ginger bug e da una piccola quantità di zucchero, quasi completamente assorbita dai lieviti selvatici durante la fermentazione.',
         en: 'Hojicha is my most refined and minimal drink, designed for those who love authentic and not very sweet flavors. Made with an infusion of Hojicha tea - a roasted Japanese green tea, known for its delicate and slightly smoky taste - this drink is enriched by the ginger bug and a small amount of sugar, almost completely absorbed by the wild yeasts during fermentation.'
@@ -152,5 +172,13 @@ export const dictionary = {
     hojicha_desc2: {
         it: `Il risultato è una bevanda leggera, con un'effervescenza naturale e un profilo aromatico che unisce le note tostate dell’Hojicha alla vivacità dello zenzero. Hojicha è la scelta perfetta per chi desidera un drink dal carattere deciso ma equilibrato, con un livello di zucchero ridottissimo, ideale per accompagnare i momenti di relax o per un brindisi consapevole. Essenziale, elegante, inconfondibile.`,
         en: `The result is a light drink, with a natural effervescence and an aromatic profile that combines the roasted notes of Hojicha with the liveliness of ginger. Hojicha is the perfect choice for those who want a drink with a strong but balanced character, with a very low sugar level, ideal for relaxing moments or for a conscious toast. Essential, elegant, unmistakable.`,
+    },
+    hojicha_ingrediens: {
+        it: 'Ingredienti: infuso di tè Hojicha, ginger bug, zucchero.',
+        en: 'Ingredients: Hojicha tea infusion, ginger bug, sugar.'
+    },
+    hojicha_nutritional: {
+        it: 'Valori nutrizionali per 100ml: Energia 15 kcal, Grassi 0g, Carboidrati 3.5g, di cui zuccheri 3.5g, Proteine 0g, Sale 0g.',
+        en: 'Nutritional values per 100ml: Energy 15 kcal, Fat 0g, Carbohydrates 3.5g, of which sugars 3.5g, Proteins 0g, Salt 0g.'
     },
 };
