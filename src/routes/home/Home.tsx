@@ -25,14 +25,23 @@ export const Home = () => {
                 </div>
             </div>
             <div className={s.main}>
-                <div className={s.firstSection}>
-                    <img src="/gingergio_face.webp" alt="Ginger Gio" className={s.firstSectionImage}/>
-                    <FancySection
-                        content={[T('home_section1a_text'), T('home_section1b_text'), T('home_section1c_text')]}
-                    />
-                </div>
-                <FancySection header={T('home_section2_title')} content={T('home_section2_text')}/>
-                <FancySection header={T('home_section3_title')} content={T('home_section3_text')}/>
+                <FancySection
+                    img={{src: '/gingergio_face.webp', alt: 'Ginger Gio'}}
+                    content={[T('home_section1a_text'), T('home_section1b_text'), T('home_section1c_text')]}
+                />
+                <FancySection 
+                    img={{src: '/bottle_home.jpg', alt: 'bottles', right: true}}
+                    header={T('home_section2_title')} 
+                    content={T('home_section2_text')}
+                />
+                <FancySection 
+                    header={T('home_section3_title')} 
+                    content={[T('home_section3a_text'), T('home_section3b_text'), T('home_section3c_text'), T('home_section3d_text')]}
+                />
+                <FancySection
+                    header={T('home_section4_title')}
+                    content={[T('home_section4a_text'), T('home_section4b_text'), T('home_section4c_text'), T('home_section4d_text'), T('home_section4e_text'), T('home_section4f_text'), T('home_section4g_text'), T('home_section4h_text')]}
+                />
             </div>
             <StickyFooter>
                 <ActionButton label={T('buybutton_label')} onClick={goToMarket}/>

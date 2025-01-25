@@ -26,62 +26,72 @@ export const dictionary = {
         en: 'My creations are born from the ginger mother yeast, the famous ginger bug, a fermented ingredient that guarantees a natural effervescence and a load of beneficial probiotics. Not only delicious, but also allies for your intestinal health and your daily balance.'
     },
     home_section1c_text: {
-        it: 'Tutto ciò che produco è fatto con amore e attenzione: fermentazione lenta, lista di ingredienti corta composta esclusivamente da prodotti freschi, di alta qualità, al minimo grado di lavorazione. Il risultato? Bevande sane, genuine e ricche di gusto, che rispettano la tua salute e l’ambiente.',
-        en: 'Everything I produce is made with love and attention: slow fermentation, short ingredient list composed exclusively of fresh, high-quality products, with minimal processing. The result? Healthy, genuine and tasty drinks, which respect your health and the environment.'
+        it: 'Tutto ciò che produco è fatto con amore e attenzione: fermentazione lenta, corta lista di ingredienti composti esclusivamente da prodotti freschi, di alta qualità, al minimo grado di lavorazione.Se stai cercando qualcosa di diverso, salutare e speciale, sei nel posto giusto. Esplora i miei prodotti, scopri il potere del lievito madre di zenzero e lasciati conquistare da un’alternativa che fa bene a te e all’ambiente.',
+        en: 'Everything I produce is made with love and attention: slow fermentation, short list of ingredients composed exclusively of fresh, high-quality products, with minimal processing.If you are looking for something different, healthy and special, you are in the right place. Explore my products, discover the power of ginger mother yeast and let yourself be won over by an alternative that is good for you and the environment.'
     },
     home_section2_title: {
-        en: 'Many bacteria, but the good ones!',
-        it: 'Tanti batteri, ma di quelli buoni!'
+        it: 'Trasparenza e sostenibilità',
+        en: 'Transparency and sustainability'
     },
     home_section2_text: {
-        en: 'how we do it (approach): Here we need to specify how our approach is step-by-step as we do not see package solutions but tailor a solution and progressive, we start with a contained budget and continue to try combinations of solutions until we find the solutions with the highest ROI and then we tailor on those progressively extending the investment',
-        it: 'Le mie creazioni nascono dal lievito madre di zenzero, il famoso ginger bug, un ingrediente fermentato che garantisce un’effervescenza naturale e una carica di probiotici benefici. Non solo deliziose, ma anche alleate per la tua salute intestinale e il tuo equilibrio quotidiano.'
+        it: 'Credo fermamente che la fiducia nasca dalla chiarezza. Per questo, sul mio sito troverai tutti i dettagli sui costi delle materie prime, della produzione, degli imballaggi e della spedizione. Ogni passaggio è tracciato, perché voglio che tu sappia esattamente cosa c’è dietro ogni bottiglia che acquisti. Inoltre, ho introdotto una politica di reso dei vetri: restituendo le bottiglie vuote, puoi recuperare parte della spesa, contribuendo a ridurre gli sprechi e a rendere il nostro pianeta un posto migliore. Ogni gesto conta, e insieme possiamo fare la differenza!',
+        en: 'I firmly believe that trust comes from clarity. For this reason, on my website you will find all the details about the costs of raw materials, production, packaging and shipping. Every step is tracked, because I want you to know exactly what is behind every bottle you buy. In addition, I have introduced a glass return policy: by returning the empty bottles, you can recover part of the expense, contributing to reducing waste and making our planet a better place. Every gesture counts, and together we can make a difference!'
     },
     home_section3_title: {
-        en: 'The best, in my opinion',
-        it: 'Le migliori, secondo me'
+        it: 'Tanti batteri, ma di quelli buoni!',
+        en: 'Many bacteria, but the good ones!'
     },
-    home_section3_text: {
-        en: 'how we do it (tools and results): Here are written all the great possibilities that Lionberry can offer in the realization of magnificent web portals, aesthetically modern and suitable for viewing on all devices, secure and complete ordered code, super connected with social media and search engines',
-        it: `Il ginger bug è una coltura mista composta principalmente da lieviti selvatici e batteri lattici che si sviluppano naturalmente sullo zenzero fresco e nell'ambiente. Ecco i microorganismi principali che probabilmente lo compongono
-        1. Lieviti selvatici
-        Specie comuni: Saccharomyces spp., Candida spp., Pichia spp.
-        Funzione:
-        Consumano gli zuccheri presenti nella miscela per produrre alcol (etanolo) e anidride carbonica (CO₂), responsabile della frizzantezza.
-        Forniscono il "motore" della fermentazione alcolica.
-        2. Batteri lattici (LAB - Lactic Acid Bacteria)
-        Specie comuni: Lactobacillus spp., Leuconostoc spp.
-        Funzione:
-        Convertono gli zuccheri in acido lattico, che abbassa il pH e conferisce un sapore leggermente acido.
-        Inibiscono la crescita di batteri indesiderati grazie all'acidificazione del mezzo.
-        3. Batteri acetici (in misura minore)
-        Specie comuni: Acetobacter spp.
-        Funzione:
-        In presenza di ossigeno, convertono l'etanolo (prodotto dai lieviti) in acido acetico.
-        Contribuiscono al profilo aromatico leggermente pungente.
-        Interazione tra i microorganismi
-        I lieviti e i batteri lattici lavorano in simbiosi:
-        I lieviti producono etanolo e anidride carbonica, creando un ambiente favorevole per i batteri lattici.
-        I batteri lattici abbassano il pH, proteggendo il ginger bug da contaminazioni indesiderate.
-        Questa interazione crea una fermentazione equilibrata, risultando in una miscela leggermente alcolica, acida e frizzante.
-        1. Supporto alla salute intestinale
-        Equilibrio del microbiota: I batteri lattici (Lactobacillus, Leuconostoc) possono contribuire a mantenere un equilibrio sano nel microbiota intestinale, riducendo la presenza di batteri patogeni.
-        Facilitazione della digestione: Questi batteri aiutano a digerire più facilmente alcuni nutrienti e possono ridurre gonfiore e gas intestinali.
-        2. Rafforzamento del sistema immunitario
-        Produzione di acido lattico: L'acido lattico creato dai batteri lattici abbassa il pH nell'intestino, creando un ambiente sfavorevole per i microorganismi dannosi.
-        Stimolazione immunitaria: I batteri probiotici interagiscono con il sistema immunitario intestinale, migliorandone la risposta e aiutando a prevenire infezioni.
-        3. Miglior assorbimento dei nutrienti
-        Minerali più biodisponibili: La fermentazione può rendere alcuni minerali, come ferro, magnesio e zinco, più facilmente assorbibili dall'organismo.
-        Produzione di vitamine: Alcuni batteri lattici producono vitamine del gruppo B durante la fermentazione.
-        4. Riduzione dell’infiammazione
-        Studi hanno dimostrato che i probiotici possono ridurre marcatori infiammatori nel corpo, contribuendo a migliorare condizioni infiammatorie croniche come la sindrome dell'intestino irritabile (IBS) o altre malattie gastrointestinali.
-        5. Effetto antiossidante
-        I composti prodotti durante la fermentazione, come i polifenoli, possono avere un effetto antiossidante, proteggendo le cellule dai danni causati dai radicali liberi.
-        6. Miglioramento del metabolismo
-        Regolazione del metabolismo degli zuccheri: I probiotici possono aiutare a regolare i livelli di zucchero nel sangue migliorando la sensibilità all'insulina.
-        Riduzione del colesterolo: Alcuni ceppi di batteri lattici possono contribuire a ridurre i livelli di colesterolo LDL.
-        7. Supporto alla salute mentale
-        Asse intestino-cervello: I probiotici hanno dimostrato di influire positivamente sull’umore e sulla gestione dello stress, grazie alla produzione di neurotrasmettitori come la serotonina.`
+    home_section3a_text: {
+        it: 'Il ginger bug è una coltura mista composta principalmente da lieviti selvatici e batteri lattici che si sviluppano naturalmente sullo zenzero fresco e nell\'ambiente. Ecco i microorganismi principali che lo compongono',
+        en: 'The ginger bug is a mixed culture composed mainly of wild yeasts and lactic bacteria that develop naturally on fresh ginger and in the environment. Here are the main microorganisms that compose it'
+    },
+    home_section3b_text: {
+        it: '1. Lieviti selvatici: Saccharomyces spp., Candida spp., Pichia spp. Funzione: Consumano gli zuccheri presenti nella miscela per produrre alcol (etanolo) e anidride carbonica (CO₂), responsabile della frizzantezza. Forniscono il "motore" della fermentazione alcolica.',
+        en: '1. Wild yeasts: Saccharomyces spp., Candida spp., Pichia spp. Function: They consume the sugars present in the mixture to produce alcohol (ethanol) and carbon dioxide (CO₂), responsible for the effervescence. They provide the "engine" of alcoholic fermentation.'
+    },
+    home_section3c_text: {
+        it: '2. Batteri lattici (LAB - Lactic Acid Bacteria): Lactobacillus spp., Leuconostoc spp. Funzione: Convertono gli zuccheri in acido lattico, che abbassa il pH e conferisce un sapore leggermente acido. Inibiscono la crescita di batteri indesiderati grazie all\'acidificazione del mezzo.',
+        en: '2. Lactic bacteria (LAB - Lactic Acid Bacteria): Lactobacillus spp., Leuconostoc spp. Function: They convert sugars into lactic acid, which lowers the pH and gives a slightly acidic flavor. They inhibit the growth of unwanted bacteria thanks to the acidification of the medium.'
+    },
+    home_section3d_text: {
+        it: '3. Batteri acetici (in misura minore): Acetobacter spp. Funzione: In presenza di ossigeno, convertono l\'etanolo (prodotto dai lieviti) in acido acetico. Contribuiscono al profilo aromatico leggermente pungente.',
+        en: '3. Acetic bacteria (to a lesser extent): Acetobacter spp. Function: In the presence of oxygen, they convert ethanol (produced by yeasts) into acetic acid. They contribute to the slightly pungent aromatic profile.'
+    },
+    home_section4_title: {
+        it: 'Benefici per la salute',
+        en: 'Health benefits'
+    },
+    home_section4a_text: {
+        it: 'Interazione tra i microorganismi: I lieviti e i batteri lattici lavorano in simbiosi. I lieviti producono etanolo e anidride carbonica, creando un ambiente favorevole per i batteri lattici. I batteri lattici abbassano il pH, proteggendo il ginger bug da contaminazioni indesiderate. Questa interazione crea una fermentazione equilibrata, risultando in una miscela leggermente alcolica, acida e frizzante.',
+        en: 'Interaction between microorganisms: Yeasts and lactic bacteria work in symbiosis. Yeasts produce ethanol and carbon dioxide, creating a favorable environment for lactic bacteria. Lactic bacteria lower the pH, protecting the ginger bug from unwanted contaminations. This interaction creates a balanced fermentation, resulting in a slightly alcoholic, acidic and effervescent mixture.'
+    },
+    home_section4b_text: {
+        it: '1. Supporto alla salute intestinale: Equilibrio del microbiota: I batteri lattici (Lactobacillus, Leuconostoc) possono contribuire a mantenere un equilibrio sano nel microbiota intestinale, riducendo la presenza di batteri patogeni. Facilitazione della digestione: Questi batteri aiutano a digerire più facilmente alcuni nutrienti e possono ridurre gonfiore e gas intestinali.',
+        en: '1. Support for intestinal health: Microbiota balance: Lactic bacteria (Lactobacillus, Leuconostoc) can help maintain a healthy balance in the intestinal microbiota, reducing the presence of pathogenic bacteria. Facilitation of digestion: These bacteria help digest some nutrients more easily and can reduce bloating and intestinal gas.'
+    },
+    home_section4c_text: {
+        it: '2. Rafforzamento del sistema immunitario: Produzione di acido lattico: L\'acido lattico creato dai batteri lattici abbassa il pH nell\'intestino, creando un ambiente sfavorevole per i microorganismi dannosi. Stimolazione immunitaria: I batteri probiotici interagiscono con il sistema immunitario intestinale, migliorandone la risposta e aiutando a prevenire infezioni.',
+        en: '2. Strengthening the immune system: Production of lactic acid: The lactic acid created by lactic bacteria lowers the pH in the intestine, creating an unfavorable environment for harmful microorganisms. Immune stimulation: Probiotic bacteria interact with the intestinal immune system, improving its response and helping to prevent infections.'
+    },
+    home_section4d_text: {
+        it: '3. Miglior assorbimento dei nutrienti: Minerali più biodisponibili: La fermentazione può rendere alcuni minerali, come ferro, magnesio e zinco, più facilmente assorbibili dall\'organismo. Produzione di vitamine: Alcuni batteri lattici producono vitamine del gruppo B durante la fermentazione.',
+        en: '3. Better nutrient absorption: More bioavailable minerals: Fermentation can make some minerals, such as iron, magnesium and zinc, more easily absorbed by the body. Vitamin production: Some lactic bacteria produce B vitamins during fermentation.'
+    },
+    home_section4e_text: {
+        it: '4. Riduzione dell’infiammazione: Studi hanno dimostrato che i probiotici possono ridurre marcatori infiammatori nel corpo, contribuendo a migliorare condizioni infiammatorie croniche come la sindrome dell\'intestino irritabile (IBS) o altre malattie gastrointestinali.',
+        en: '4. Reduction of inflammation: Studies have shown that probiotics can reduce inflammatory markers in the body, helping to improve chronic inflammatory conditions such as irritable bowel syndrome (IBS) or other gastrointestinal diseases.'
+    },
+    home_section4f_text: {
+        it: '5. Effetto antiossidante: I composti prodotti durante la fermentazione, come i polifenoli, possono avere un effetto antiossidante, proteggendo le cellule dai danni causati dai radicali liberi.',
+        en: '5. Antioxidant effect: Compounds produced during fermentation, such as polyphenols, can have an antioxidant effect, protecting cells from damage caused by free radicals.'
+    },
+    home_section4g_text: {
+        it: '6. Miglioramento del metabolismo: Regolazione del metabolismo degli zuccheri: I probiotici possono aiutare a regolare i livelli di zucchero nel sangue migliorando la sensibilità all\'insulina. Riduzione del colesterolo: Alcuni ceppi di batteri lattici possono contribuire a ridurre i livelli di colesterolo LDL.',
+        en: '6. Metabolism improvement: Sugar metabolism regulation: Probiotics can help regulate blood sugar levels by improving insulin sensitivity. Cholesterol reduction: Some strains of lactic bacteria can help reduce LDL cholesterol levels.'
+    },
+    home_section4h_text: {
+        it: '7. Supporto alla salute mentale: Asse intestino-cervello: I probiotici hanno dimostrato di influire positivamente sull’umore e sulla gestione dello stress, grazie alla produzione di neurotrasmettitori come la serotonina.',
+        en: '7. Support for mental health: Gut-brain axis: Probiotics have been shown to positively influence mood and stress management, thanks to the production of neurotransmitters such as serotonin.'
     },
     market_section1_title: {
         en: 'Read here, if you have never purchased before',

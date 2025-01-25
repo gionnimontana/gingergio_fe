@@ -26,6 +26,7 @@ export const Market = () => {
                     name='Zen Cola' 
                     description='Bevanda analcolica fermentata a base di the yunnan pu-erh e spezie. Gusto intenso e speziato, con note di the e spezie.' 
                     imageId='zencola'
+                    imageRight={true}
                 />
             </div>
             
