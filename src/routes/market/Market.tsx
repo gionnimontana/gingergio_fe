@@ -14,19 +14,23 @@ export const Market = () => {
         <Page
             outsideChilds={<MarketStickyFooter/>}
         >
-            <FancySection header={T('market_section1_title')} content={T('market_section1_text')}/>
+            <FancySection content={T('market_section1_text')}/>
 
             <div className={s.productsContainer}>
                 <ProductBox 
                     name='House Pride' 
-                    description='Bevanda analcolica fermentata a base di zenzero, limone e spezie. Gusto intenso e speziato, con note di limone e zenzero.' 
+                    description={[T('house_pride_desc1'), T('house_pride_desc2')]}
                     imageId='housepride'
                 />
                 <ProductBox 
                     name='Zen Cola' 
-                    description='Bevanda analcolica fermentata a base di the yunnan pu-erh e spezie. Gusto intenso e speziato, con note di the e spezie.' 
+                    description={[T('zen_cola_desc1'), T('zen_cola_desc2')]}
                     imageId='zencola'
-                    imageRight={true}
+                />
+                <ProductBox 
+                    name='Hojicha' 
+                    description={[T('hojicha_desc1'), T('hojicha_desc2')]}
+                    imageId='zencola'
                 />
             </div>
             

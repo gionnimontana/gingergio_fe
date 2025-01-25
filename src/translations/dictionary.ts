@@ -62,8 +62,8 @@ export const dictionary = {
         en: 'Health benefits'
     },
     home_section4a_text: {
-        it: 'Interazione tra i microorganismi: I lieviti e i batteri lattici lavorano in simbiosi. I lieviti producono etanolo e anidride carbonica, creando un ambiente favorevole per i batteri lattici. I batteri lattici abbassano il pH, proteggendo il ginger bug da contaminazioni indesiderate. Questa interazione crea una fermentazione equilibrata, risultando in una miscela leggermente alcolica, acida e frizzante.',
-        en: 'Interaction between microorganisms: Yeasts and lactic bacteria work in symbiosis. Yeasts produce ethanol and carbon dioxide, creating a favorable environment for lactic bacteria. Lactic bacteria lower the pH, protecting the ginger bug from unwanted contaminations. This interaction creates a balanced fermentation, resulting in a slightly alcoholic, acidic and effervescent mixture.'
+        it: 'Interazione tra i microorganismi: I lieviti e i batteri lattici lavorano in simbiosi. I lieviti producono etanolo e anidride carbonica, creando un ambiente favorevole per i batteri lattici. I batteri lattici abbassano il pH, proteggendo il ginger bug da contaminazioni indesiderate. Questa interazione crea una fermentazione equilibrata, risultando in una miscela leggermente acida e frizzante.',
+        en: 'Interaction between microorganisms: Yeasts and lactic bacteria work in symbiosis. Yeasts produce ethanol and carbon dioxide, creating a favorable environment for lactic bacteria. Lactic bacteria lower the pH, protecting the ginger bug from unwanted contaminations. This interaction creates a balanced fermentation, resulting in a slightly acidic and effervescent mixture.'
     },
     home_section4b_text: {
         it: '1. Supporto alla salute intestinale: Equilibrio del microbiota: I batteri lattici (Lactobacillus, Leuconostoc) possono contribuire a mantenere un equilibrio sano nel microbiota intestinale, riducendo la presenza di batteri patogeni. Facilitazione della digestione: Questi batteri aiutano a digerire più facilmente alcuni nutrienti e possono ridurre gonfiore e gas intestinali.',
@@ -93,13 +93,9 @@ export const dictionary = {
         it: '7. Supporto alla salute mentale: Asse intestino-cervello: I probiotici hanno dimostrato di influire positivamente sull’umore e sulla gestione dello stress, grazie alla produzione di neurotrasmettitori come la serotonina.',
         en: '7. Support for mental health: Gut-brain axis: Probiotics have been shown to positively influence mood and stress management, thanks to the production of neurotransmitters such as serotonin.'
     },
-    market_section1_title: {
-        en: 'Read here, if you have never purchased before',
-        it: 'Leggi qui, se non hai mai acquistato prima'
-    },
     market_section1_text: {
-        en: `I'm a little local producer, so I can't offer you the same prices as the big supermarkets. But I can offer you a better product, made with love and care, and a better service, with a direct relationship with me, the producer. I hope you will appreciate the difference and support local producers like me.`,
-        it: 'Sono un piccolo produttore locale, quindi non posso offrirti gli stessi prezzi dei grandi supermercati. Ma posso offrirti un prodotto migliore, fatto con amore e cura, e un servizio migliore, con un rapporto diretto con me, il produttore. Spero apprezzerai la differenza e supporterai produttori locali come me.'
+        it: 'Sono un piccolo produttore locale e non posso competere con i prezzi dei grandi supermercati, ma quello che posso offrirti è qualcosa di unico. Ogni bottiglia nasce dalla mia passione, con cura per i dettagli e con un impegno totale verso la qualità. La mia arma è la massima tracciabilità e trasparenza: sul mio sito puoi scoprire tutto, dai costi delle materie prime al processo produttivo, fino agli imballaggi e alla spedizione. Inoltre, qui hai la possibilità di avere un rapporto diretto con me, il produttore, per ogni domanda o consiglio. Spero che tu possa apprezzare questa differenza e scegliere di supportare chi mette il cuore e la verità in ogni passo del proprio lavoro. 💛',
+        en: `I am a small local producer and I cannot compete with the prices of large supermarkets, but what I can offer you is something unique. Each bottle is born from my passion, with attention to detail and with total commitment to quality. My weapon is maximum traceability and transparency: on my website you can discover everything, from the costs of raw materials to the production process, up to packaging and shipping. Furthermore, here you have the opportunity to have a direct relationship with me, the producer, for any questions or advice. I hope you can appreciate this difference and choose to support those who put their heart and truth into every step of their work. 💛`
     },
     basket_section1_title: {
         en: 'Your basket',
@@ -132,5 +128,29 @@ export const dictionary = {
     remove_button: {
         en: 'Remove',
         it: 'Rimuovi'
+    },
+    house_pride_desc1: {
+        it: 'House Pride è la mia prima creazione, nata dal cuore della mia cucina, le prime bottiglie sono state realizzate con i limoni coltivati direttamente da me. È un blend autentico che unisce l’intensità dello zenzero fresco macinato, la vitalità del ginger bug, un tocco di zucchero e il succo di limone per un equilibrio perfetto tra dolcezza e freschezza.',
+        en: 'House Pride is my first creation, born from the heart of my kitchen, the first bottles were made with lemons grown directly by me. It is an authentic blend that combines the intensity of freshly ground ginger, the vitality of the ginger bug, a touch of sugar and lemon juice for a perfect balance between sweetness and freshness.'
+    },
+    house_pride_desc2: {
+        it: 'House Pride è quella con dolcezza media, ma non lasciarti ingannare: la sua nota piccante si farà sentire! È il drink ideale cerca un’alternativa sana e gustosa alle bibite gassate tradizionali, il drink ideale per chi cerca una bevanda naturale e vibrante, perfetta per dare una sferzata di energia alla tua giornata o per accompagnare i momenti di relax.',
+        en: 'House Pride is the one with medium sweetness, but don\'t be fooled: its spicy note will be felt! It is the ideal drink looking for a healthy and tasty alternative to traditional soft drinks, House Pride is an explosion of flavors and benefits for your daily well-being.'
+    },
+    zen_cola_desc1: {
+        it: 'Zen Cola è la mia interpretazione di una cola che guarda al benessere. Questa bevanda nasce da un infuso pregiato di tè Pu-erh dello Yunnan, arricchito dal tocco effervescente del ginger bug, zucchero e una spruzzata di succo di limone per un equilibrio di sapori unico.',
+        en: 'Zen Cola is my interpretation of a cola that looks at well-being. This drink comes from a precious infusion of Yunnan Pu-erh tea, enriched by the effervescent touch of the ginger bug, sugar and a splash of lemon juice for a unique balance of flavors.'
+    },
+    zen_cola_desc2: {
+        it: 'Tra le mie creazioni, Zen Cola è la più dolce, ma sempre con moderazione: il suo contenuto di zucchero è sensibilmente inferiore rispetto alle bibite gassate tradizionali, per offrirti un’alternativa più sana senza rinunciare al gusto. Il tè Pu-erh le dona una profondità aromatica e un carattere inconfondibile, rendendola perfetta per chi cerca qualcosa di diverso, naturale e appagante. Zen Cola è il mio modo di portare un pizzico di zen nel tuo bicchiere, ogni giorno.',
+        en: 'Among my creations, Zen Cola is the sweetest, but always in moderation: its sugar content is significantly lower than traditional soft drinks, to offer you a healthier alternative without sacrificing taste. Pu-erh tea gives it an aromatic depth and an unmistakable character, making it perfect for those looking for something different, natural and satisfying. Zen Cola is my way of bringing a touch of zen to your glass, every day.'
+    },
+    hojicha_desc1: {
+        it: 'Hojicha è la mia bevanda più raffinata e minimale, pensata per chi ama i sapori autentici e poco dolci. Realizzata con un infuso di tè Hojicha – un tè verde giapponese tostato, noto per il suo gusto delicato e leggermente affumicato – questa bevanda è arricchita dal ginger bug e da una piccola quantità di zucchero, quasi completamente assorbita dai lieviti selvatici durante la fermentazione.',
+        en: 'Hojicha is my most refined and minimal drink, designed for those who love authentic and not very sweet flavors. Made with an infusion of Hojicha tea - a roasted Japanese green tea, known for its delicate and slightly smoky taste - this drink is enriched by the ginger bug and a small amount of sugar, almost completely absorbed by the wild yeasts during fermentation.'
+    },
+    hojicha_desc2: {
+        it: `Il risultato è una bevanda leggera, con un'effervescenza naturale e un profilo aromatico che unisce le note tostate dell’Hojicha alla vivacità dello zenzero. Hojicha è la scelta perfetta per chi desidera un drink dal carattere deciso ma equilibrato, con un livello di zucchero ridottissimo, ideale per accompagnare i momenti di relax o per un brindisi consapevole. Essenziale, elegante, inconfondibile.`,
+        en: `The result is a light drink, with a natural effervescence and an aromatic profile that combines the roasted notes of Hojicha with the liveliness of ginger. Hojicha is the perfect choice for those who want a drink with a strong but balanced character, with a very low sugar level, ideal for relaxing moments or for a conscious toast. Essential, elegant, unmistakable.`,
     },
 };

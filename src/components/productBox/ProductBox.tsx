@@ -6,7 +6,7 @@ import FancySection from '../../components/generalUI/fancySection/FancySection';
 
 interface Props {
     name: string;
-    description: string;
+    description: string[];
     imageId: string;
     imageRight?: boolean;
     className?: string;
@@ -32,7 +32,7 @@ const ProductBox = ({ name, description, imageId, imageRight, className }: Props
             header={name}
             content={
                 <div className={s.description}>
-                    <div className={s.descriptionText}>{description}</div>
+                    {description.map((item, index) => <div className={s.descriptionText} key={index}>{item}</div>)}
                     <div className={s.descriptionActions}>
                         <ActionButton label='Aggiungi al carrello' onClick={addToBasket}/>
                     </div>
