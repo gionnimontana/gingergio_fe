@@ -181,4 +181,8 @@ export const dictionary = {
         it: 'Valori nutrizionali per 100ml: Energia 15 kcal, Grassi 0g, Carboidrati 3.5g, di cui zuccheri 3.5g, Proteine 0g, Sale 0g.',
         en: 'Nutritional values per 100ml: Energy 15 kcal, Fat 0g, Carbohydrates 3.5g, of which sugars 3.5g, Proteins 0g, Salt 0g.'
     },
+    productbox_mainbutton: {
+        it: 'Opzioni di acquisto',
+        en: 'Purchase options'
+    }
 };

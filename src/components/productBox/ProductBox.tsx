@@ -1,30 +1,21 @@
-import useBasket from '../../helpers/useBasket';
+import useTranslations from '../../translations/useTranslations';
 import ActionButton from '../../components/generalUI/actionButton/ActionButton';
-import FancyHeader from '../generalUI/fancyHeader/FancyHeader';
-import s from './ProductBox.module.css';
 import FancySection from '../../components/generalUI/fancySection/FancySection';
+import BuyBox from './BuyBox/BuyBox';
+import s from './ProductBox.module.css';
+import { useState } from 'react';
 
 interface Props {
     name: string;
     description: string[];
     imageId: string;
     imageRight?: boolean;
-    className?: string;
 }
 
-const ProductBox = ({ name, description, imageId, imageRight, className }: Props) => {
+const ProductBox = ({ name, description, imageId, imageRight }: Props) => {
+    const [open, setOpen] = useState<boolean>(false);
 
-    const { add } = useBasket();
-    const containerClass = s.container + (className ? ' ' + className : '');
-
-    const addToBasket = () => {
-        const item = {
-            name,
-            variant: 'base',
-            format: '250ml Tappo meccanico'
-        }
-        add(item);
-    }
+    const T = useTranslations()
 
     return (
         <FancySection
@@ -34,7 +25,8 @@ const ProductBox = ({ name, description, imageId, imageRight, className }: Props
                 <div className={s.description}>
                     {description.map((item, index) => <div className={s.descriptionText} key={index}>{item}</div>)}
                     <div className={s.descriptionActions}>
-                        <ActionButton label='Aggiungi al carrello' onClick={addToBasket}/>
+                        <ActionButton label={open ? 'Nascondi' : T('productbox_mainbutton')} onClick={()=>setOpen((v)=>!v)} contrast={open}/>
+                        {open ? <BuyBox closeBox={()=>setOpen(false)}/> : null}
                     </div>
                 </div>
             }
