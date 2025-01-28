@@ -205,4 +205,8 @@ export const dictionary = {
         it: 'Aggiungi al carrello',
         en: 'Add to basket'
     },
+    total: {
+        it: 'Totale',
+        en: 'Total'
+    },
 };

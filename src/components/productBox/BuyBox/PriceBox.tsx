@@ -27,7 +27,7 @@ const PriceBox = ({ totalCashback, totalPrice, items, callback }: Props) => {
     return (
         <>
             <div className={s.priceBox}>
-                <div className={s.priceLabel}>Totale:</div>
+                <div className={s.priceLabel}>{T('total')}</div>
                 <div className={s.price}>
                     <CurrencyFormatter value={totalPrice}/>
                     <div className={s.totalCashback}><CurrencyFormatter value={totalCashback}/> {T('cashback')}*</div>
