@@ -22,8 +22,6 @@ export const Basket = () => {
                     <div key={index} className={s.basketItem}>
                         <div>{item.name}</div>
                         <div>{item.format}</div>
-                        <CurrencyFormatter value={item.cashback}/>
-                        <CurrencyFormatter value={item.price}/>
                         <div onClick={() => remove(index)} className={s.trashIcon}>🗑️</div>
                     </div>
                 ))}
