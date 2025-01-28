@@ -19,6 +19,7 @@
     width: 90%;
     border-radius: 21rem;
     max-width: 21rem;
+    margin: 1rem 0;
 }
 
 @media (min-width: 600px) {

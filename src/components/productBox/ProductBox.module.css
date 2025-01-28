@@ -4,3 +4,7 @@
     flex-direction: column;
     gap: 1rem;
 }
+
+.descriptionActions {
+    margin-top: 1rem;
+}

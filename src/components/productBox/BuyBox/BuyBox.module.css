@@ -3,6 +3,8 @@
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: var(--backgroundLight);
+    width: fit-content;
+    margin: auto;
     margin-top: 1rem;
 }
 
