@@ -25,6 +25,10 @@
   cursor: not-allowed;
 }
 
+.disabled:hover {
+  background-color: var(--disabled);
+}
+
 .plusButton {
   background-color: var(--accent);
 }
