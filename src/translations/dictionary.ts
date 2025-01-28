@@ -184,5 +184,25 @@ export const dictionary = {
     productbox_mainbutton: {
         it: 'Opzioni di acquisto',
         en: 'Purchase options'
-    }
+    },
+    cashback_disclaimer: {
+        it: 'Somma convertita in buono per nuovi acquisti una volta restituito il contenitore',
+        en: 'Amount converted into a voucher for new purchases once the container is returned'
+    },
+    price : {
+        it: 'Prezzo',
+        en: 'Price'
+    },
+    format: {
+        it: 'Formato',
+        en: 'Format'
+    },
+    cashback: {
+        it: 'Cashback',
+        en: 'Cashback'
+    },
+    add_to_basket: {
+        it: 'Aggiungi al carrello',
+        en: 'Add to basket'
+    },
 };

@@ -1,6 +1,5 @@
 import { pb } from "../../helpers/pb"
 import { useState } from "react"
-import { Modal } from "../../components/generalUI/modal/Modal"
 import s from './Login.module.css'
 import {LoadingButton} from "../../components/generalUI/loadingButton/LoadingButton"
 import {FormComponent} from "../../components/generalUI/form/FormComponent"
@@ -30,7 +29,7 @@ export const Login = ({onClose}: Props) => {
     }
 
     return (
-        <Modal onClose={onClose}>
+        <div>
             <div className={s.container}>
                 <div className={s.icon}>🔑</div>
                 <FormComponent 
@@ -55,6 +54,6 @@ export const Login = ({onClose}: Props) => {
                 </LoadingButton>
                 {error ? <div className={s.error}>{error}</div> : null}
             </div>
-        </Modal>
+        </div>
     )
 }

@@ -20,5 +20,12 @@
 .backgroundContrast:hover{
     background: var(--contrastDark);
 }
+.disabled{
+    background: var(--disabled);
+    cursor: not-allowed;
+}
+.disabled:hover{
+    background: var(--disabled);
+}
 
   

@@ -1,65 +1,52 @@
 import { useWarehouse } from "../../../queries/warehouse";
-import ActionButton from "../../../components/generalUI/actionButton/ActionButton";
-import useBasket from "../../../helpers/useBasket";
 import s from './BuyBox.module.css';
+import useTranslations from "../../../translations/useTranslations";
+import BuyBoxRow from "./BuyBoxRow";
+import PriceBox from "./PriceBox";
+import { BasketItem } from "../../../types/basket";
+import { useEffect, useState } from "react";
 
 interface Props {
+    productId: string;
     closeBox: () => void;
 }
 
-const BuyBox = ({ closeBox }: Props) => {
-    const { add } = useBasket();
+const BuyBox = ({ productId, closeBox }: Props) => {
+    const [items, setItems] = useState<BasketItem[]>([]);
+    const [totalPrice, setTotalPrice] = useState<number>(0);
+    const [totalCashback, setTotalCashback] = useState<number>(0);
 
-    const warehouse = useWarehouse();
-    console.log(warehouse.data);
+    const T = useTranslations();
 
-    const addToBasket = () => {
-        const item = {
-            name: 'House Pride',
-            variant: 'base',
-            format: '250ml Tappo meccanico'
+    const onRowChange = (quantity: number, format: string, price: number, cashback: number) => {
+        const newItems = items.filter(item => item.format !== format);
+        for (let i = 0; i < quantity; i++) {
+            newItems.push({name: productId, format, price, cashback});
         }
-        add(item);
+        setItems(newItems);
+        const newTotalPrice = newItems.reduce((acc, item) => acc + item.price, 0);
+        const newTotalCashback = newItems.reduce((acc, item) => acc + item.cashback, 0);
+        setTotalPrice(newTotalPrice);
+        setTotalCashback(newTotalCashback);
     }
+
+    const addToCart = () => {
+        setItems([]);
+        setTotalPrice(0);
+        setTotalCashback(0);
+        closeBox();
+    }
+
     return (
         <div className={s.container}>
-            <div className={s.optionRow}>
-                <div>quantita</div>
-                <div>disponibilita immediata</div>
-                <div>formato</div>
-                <div>costo formato</div>
-                <div>cashback</div>
-                <div>prezzo per unita</div>
-            </div>
-            <div className={s.optionRow}>
-                <input></input>
-                <div>6</div>
-                <div>250ml Tappo meccanico</div>
-                <div>€ 2</div>
-                <div>€ 1,50</div>
-                <div>€ 3.25</div>
-            </div>
-            <div className={s.optionRow}>
-                <input></input>
-                <div>6</div>
-                <div>220ml Tappo meccanico</div>
-                <div>€ 1,5</div>
-                <div>€ 1,25</div>
-                <div>€ 3.00</div>
-            </div>
-            <div className={s.litrepriceBox}>
-                <div className={s.litrepriceLabel}>Prezzo per litro</div>
-                <div className={s.litreprice}>€ 6</div>
-                <div className={s.litreprice}>2€ costo di produzione, 4€ margine lordo Ginger Gio</div>
-            </div>
-            <div className={s.priceBox}>
-                <div className={s.priceLabel}>Totale</div>
-                <div className={s.price}>€ 2,50 (€ 1,5 cashback)</div>
-            </div>
-            <div className={s.actions}>
-                <ActionButton onClick={closeBox} label="nascondi" contrast={true}/>
-                <ActionButton onClick={addToBasket} label="aggiungi al carrello"/>
-            </div>
+            <BuyBoxRow format="Vetro 220ml" price={3.00} cashback={1.25} callback={onRowChange}/>
+            <BuyBoxRow format="Vetro 250ml" price={3.50} cashback={1.75} callback={onRowChange}/>
+            <PriceBox
+                totalPrice={totalPrice}
+                totalCashback={totalCashback}
+                items={items}
+                callback={addToCart}
+            />
         </div>
     );
 }

@@ -2,11 +2,11 @@ import { useQuery } from "@tanstack/react-query";
 import { queryCacheTime } from "../../constants/settings";
 import { pb } from "../../helpers/pb";
 
-export function useWarehouse() {
+export function useRecipes() {
     return useQuery({
-        queryKey: [`warehouse`],
+        queryKey: [`recipes`],
         queryFn: async () => {
-            const response = pb.collection('warehouse').getFullList();
+            const response = pb.collection('recipes').getFullList();
             return response;
         }, 
         gcTime: queryCacheTime, 

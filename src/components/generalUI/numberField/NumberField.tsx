@@ -25,9 +25,9 @@ export const NumberField = ({ min, max, value, onChange }: Props) => {
 
   return (
     <div className={s.container}>
-      <button className={cn(disableMinus)} onClick={onMinusClick}>➖</button>
+      <div className={cn(disableMinus)} onClick={onMinusClick}>-</div>
       <div className={s.value}>{value}</div>
-      <button className={cn(disablePlus)} onClick={onPlusClick}>➕</button>
+      <div className={`${cn(disablePlus)} ${s.plusButton}`} onClick={onPlusClick}>+</div>
     </div>
   )
 }

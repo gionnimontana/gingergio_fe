@@ -8,25 +8,25 @@ import { useState } from 'react';
 interface Props {
     name: string;
     description: string[];
-    imageId: string;
+    productId: string;
     imageRight?: boolean;
 }
 
-const ProductBox = ({ name, description, imageId, imageRight }: Props) => {
+const ProductBox = ({ name, description, productId, imageRight }: Props) => {
     const [open, setOpen] = useState<boolean>(false);
 
     const T = useTranslations()
 
     return (
         <FancySection
-            img={{src: `/${imageId}.jpg`, alt: name, right: imageRight}}
+            img={{src: `/${productId}.jpg`, alt: name, right: imageRight}}
             header={name}
             content={
                 <div className={s.description}>
                     {description.map((item, index) => <div className={s.descriptionText} key={index}>{item}</div>)}
                     <div className={s.descriptionActions}>
                         <ActionButton label={open ? 'Nascondi' : T('productbox_mainbutton')} onClick={()=>setOpen((v)=>!v)} contrast={open}/>
-                        {open ? <BuyBox closeBox={()=>setOpen(false)}/> : null}
+                        {open ? <BuyBox closeBox={()=>setOpen(false)} productId={name}/> : null}
                     </div>
                 </div>
             }

@@ -1,6 +1,7 @@
 
 export interface BasketItem {
     name: string
-    variant: string
     format: string
+    price: number
+    cashback: number
 }
