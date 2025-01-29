@@ -5,7 +5,6 @@ import FancySection from '../../components/generalUI/fancySection/FancySection';
 import MarketStickyFooter from './components/marketStickyFooter/MarketStickyFooter';
 import s from './Market.module.css';
 import ProductBox from '../../components/productBox/ProductBox';
-import { ScrollRestoration } from 'react-router-dom';
 
 export const Market = () => {
 
@@ -16,7 +15,6 @@ export const Market = () => {
             outsideChilds={<MarketStickyFooter/>}
         >
             <FancySection content={T('market_section1_text')} className={s.extrapadding}/>
-            <ScrollRestoration/>
             <div className={s.productsContainer}>
                 <ProductBox 
                     name='House Pride' 
