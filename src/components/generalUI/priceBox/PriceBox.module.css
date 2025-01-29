@@ -1,0 +1,28 @@
+.priceBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: auto;
+    margin-top: 1rem;
+    max-width: 26rem;
+}
+
+.price {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.totalCashback {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.cashbackDisclaimer {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    max-width: 30rem;
+    margin: auto;
+    margin-top: 1rem;
+}

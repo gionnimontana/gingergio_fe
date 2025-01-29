@@ -1,0 +1,36 @@
+.optionRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: normal;
+    margin-top: 1rem;
+    gap: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.rowBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: normal;
+    gap: 2rem;
+    text-align: center;
+}
+
+.separator {
+    width: 100%;
+    border-bottom: solid 1px;
+    max-width: 38rem;
+}
+
+.header {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.textSpace {
+    width: 6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

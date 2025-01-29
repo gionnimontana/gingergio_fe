@@ -13,10 +13,6 @@ export const dictionary = {
         en: 'Shop',
         it: 'Acquista'
     },
-    home_section1_title: {
-        en: 'Healthy and sustainable drinks',
-        it: 'Bevande sane e sostenibili'
-    },
     home_section1a_text: {
         en: 'Nice to meet you, I am Ginger Gio The father of a unique line of probiotic beverages, created with passion and dedication. With my products, I want to offer you a healthy, fresh and tasty alternative to traditional soft drinks and alcoholic beverages.',
         it: 'Piacere, sono Ginger Gio Il padre di una linea di bevande probiotiche uniche, create con passione e dedizione. Con i miei prodotti, voglio offrirti un’alternativa salutare, fresca e gustosa alle bibite gassate tradizionali e alle bevande alcoliche.'
@@ -26,8 +22,8 @@ export const dictionary = {
         en: 'My creations are born from the ginger mother yeast, the famous ginger bug, a fermented ingredient that guarantees a natural effervescence and a load of beneficial probiotics. Not only delicious, but also allies for your intestinal health and your daily balance.'
     },
     home_section1c_text: {
-        it: 'Tutto ciò che produco è fatto con amore e attenzione: fermentazione lenta, corta lista di ingredienti composti esclusivamente da prodotti freschi, di alta qualità, al minimo grado di lavorazione.Se stai cercando qualcosa di diverso, salutare e speciale, sei nel posto giusto. Esplora i miei prodotti, scopri il potere del lievito madre di zenzero e lasciati conquistare da un’alternativa che fa bene a te e all’ambiente.',
-        en: 'Everything I produce is made with love and attention: slow fermentation, short list of ingredients composed exclusively of fresh, high-quality products, with minimal processing.If you are looking for something different, healthy and special, you are in the right place. Explore my products, discover the power of ginger mother yeast and let yourself be won over by an alternative that is good for you and the environment.'
+        it: 'Tutto ciò che produco è fatto con amore e attenzione: fermentazione lenta, corta lista di ingredienti composti esclusivamente da prodotti freschi, di alta qualità, al minimo grado di lavorazione. Se stai cercando qualcosa di diverso, salutare e speciale, sei nel posto giusto. Esplora i miei prodotti, scopri il potere del lievito madre di zenzero e lasciati conquistare da un’alternativa che fa bene a te e all’ambiente.',
+        en: 'Everything I produce is made with love and attention: slow fermentation, short list of ingredients composed exclusively of fresh, high-quality products, with minimal processing. If you are looking for something different, healthy and special, you are in the right place. Explore my products, discover the power of ginger mother yeast and let yourself be won over by an alternative that is good for you and the environment.'
     },
     home_section2_title: {
         it: 'Trasparenza e sostenibilità',
@@ -208,5 +204,13 @@ export const dictionary = {
     total: {
         it: 'Totale',
         en: 'Total'
+    },
+    name : {
+        it: 'Nome',
+        en: 'Name'
+    },
+    empty_basket_text: {
+        it: 'Il tuo carrello è vuoto',
+        en: 'Your basket is empty'
     },
 };

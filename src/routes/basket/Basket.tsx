@@ -2,14 +2,14 @@ import useBasket from '../../helpers/useBasket';
 import Page from '../../components/page/Page';
 import FancySection from '../../components/generalUI/fancySection/FancySection';
 import useTranslations from '../../translations/useTranslations';
-import s from './Basket.module.css';
 import BasketStickyFooter from './components/basketStickyFooter/BasketStickyFooter';
-import ActionButton from '../../components/generalUI/actionButton/ActionButton';
-import CurrencyFormatter from '../../components/generalUI/currencyFormatter/CurrencyFormatter';
+import ProductRow from '../../components/productRow/ProductRow';
+import PriceBox from '../../components/generalUI/priceBox/PriceBox';
+import s from './Basket.module.css';
 
 export const Basket = () => {
 
-    const { basket, remove } = useBasket()
+    const { nonEmptyList, update, getItemQuantity, isEmpty, getTotalCashback, getTotalPrice } = useBasket()
     const T = useTranslations()
 
     return (
@@ -17,14 +17,28 @@ export const Basket = () => {
             outsideChilds={<BasketStickyFooter/>}
         >
             <FancySection header={T('basket_section1_title')} content={T('basket_section1_text')}/>
-            <div className={s.basket}>
-                {basket.map((item, index) => (
-                    <div key={index} className={s.basketItem}>
-                        <div>{item.name}</div>
-                        <div>{item.format}</div>
-                        <div onClick={() => remove(index)} className={s.trashIcon}>🗑️</div>
-                    </div>
-                ))}
+            <div className={s.container}>
+                <div className={s.basket}>
+                    {nonEmptyList.map((item, index) => (
+                        <ProductRow
+                            key={index}
+                            productName={item.name}
+                            format={item.format}
+                            price={item.price}
+                            cashback={item.cashback}
+                            quantity={getItemQuantity(item.name, item.format)}
+                            onChange={(q: number)  => update({...item, quantity: q})}
+                        />
+                    ))}
+                </div>
+                {isEmpty() ? (
+                    <div className={s.emptyDisclaimer}>{T('empty_basket_text')}</div>
+                ) : (
+                    <PriceBox 
+                        totalPrice={getTotalPrice()} 
+                        totalCashback={getTotalCashback()}
+                    />
+                )}
             </div>
         </Page>
     );

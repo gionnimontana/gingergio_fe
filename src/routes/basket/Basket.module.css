@@ -15,13 +15,24 @@
     margin: 1rem 0rem;
 }
 
-.trashIcon {
-    cursor: pointer;
-    font-size: 1.5rem;
+.cashbackDisclaimer {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    max-width: 30rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.container {
+    padding: 0.5rem;
+}
+
+.emptyDisclaimer {
+    text-align: center;
 }
 
 @media (max-width: 800px) {
     .basketItem {
         gap: 0.5rem;
     }
-  }
+}

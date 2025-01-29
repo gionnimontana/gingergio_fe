@@ -7,16 +7,16 @@ import ActionButton from "../../../../components/generalUI/actionButton/ActionBu
 import s from "./MarketStickyFooter.module.css";
 
 const MarketStickyFooter = () => {
-    const { basket } = useBasket();
+    const { isEmpty, getTotalItemNumber } = useBasket();
     const T = useTranslations();
     const navigate = useNavigate()
     const goToBasket = () => {
         navigate(routes.Basket)
     }
 
-    if (basket.length === 0) return null;
+    if (isEmpty()) return null;
 
-    const label = `${T('marketStickyFooter_label')} (${basket.length})`;
+    const label = `${T('marketStickyFooter_label')} (${getTotalItemNumber()})`;
 
     return (
         <StickyFooter>

@@ -4,4 +4,5 @@ export interface BasketItem {
     format: string
     price: number
     cashback: number
+    quantity: number
 }

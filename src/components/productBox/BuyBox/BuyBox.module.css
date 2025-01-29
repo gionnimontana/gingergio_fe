@@ -8,60 +8,9 @@
     margin-top: 1rem;
 }
 
-.optionRow {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: normal;
-    margin-top: 1rem;
-    gap: 2rem;
-    text-align: center;
-}
-
-.header {
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-.priceBox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.2rem;
-    margin: auto;
-    margin-top: 1rem;
-    max-width: 26rem;
-}
-
-.price {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.8rem;
-}
-
 .actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
-}
-
-.separator {
-    width: 100%;
-    border-bottom: solid 1px;
-    max-width: 30rem;
-    margin: auto;
-}
-
-.totalCashback {
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-.cashbackDisclaimer {
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    max-width: 30rem;
-    margin: auto;
     margin-top: 1rem;
 }

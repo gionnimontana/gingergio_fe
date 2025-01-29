@@ -7,7 +7,7 @@ import ActionButton from "../../../../components/generalUI/actionButton/ActionBu
 import s from "./BasketStickyFooter.module.css";
 
 const BasketStickyFooter = () => {
-    const { basket } = useBasket();
+    const { isEmpty } = useBasket();
     const T = useTranslations();
     const navigate = useNavigate()
     const goToBasket = () => {
@@ -17,12 +17,10 @@ const BasketStickyFooter = () => {
         navigate(routes.Market)
     }
 
-    const areItems = basket.length > 0
-
     return (
         <StickyFooter>
-            <ActionButton label={T('basketStickyFooter_button1')} onClick={goToMarket} contrast={areItems}/>
-            {areItems ? <ActionButton label={T('basketStickyFooter_button2')} onClick={goToBasket}/> : null}
+            <ActionButton label={T('basketStickyFooter_button1')} onClick={goToMarket} contrast={!isEmpty()}/>
+            {!isEmpty() ? <ActionButton label={T('basketStickyFooter_button2')} onClick={goToBasket}/> : null}
         </StickyFooter>
     );
 };

@@ -1,4 +1,5 @@
 .content {
     background-color: var(--backgroundLight);
     color: var(--backgroundDark);
+    padding-bottom: 2rem;
 }
