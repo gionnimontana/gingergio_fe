@@ -102,8 +102,8 @@ export const dictionary = {
         it: 'Qui puoi vedere i prodotti che hai aggiunto al tuo carrello. Quando sei pronto, puoi procedere al pagamento.'
     },
     basketStickyFooter_button1: {
-        en: 'Continue shopping',
-        it: 'Continua lo shopping'
+        en: 'Back to products',
+        it: 'Torna ai prodotti'
     },
     basketStickyFooter_button2: {
         en: 'Checkout',
@@ -212,5 +212,9 @@ export const dictionary = {
     empty_basket_text: {
         it: 'Il tuo carrello è vuoto',
         en: 'Your basket is empty'
+    },
+    login_subscribe_text: {
+        it: 'Accedi / Registrati',
+        en: 'Login / Subscribe'
     },
 };
