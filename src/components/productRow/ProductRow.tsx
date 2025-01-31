@@ -9,10 +9,11 @@ interface Props {
     cashback: number;
     quantity: number;
     productName?: string;
+    warehouse: number;
     onChange: (newQuantity: number) => void;
 }
 
-const ProductRow = ({ quantity, productName, format, price, cashback, onChange }: Props) => {
+const ProductRow = ({ quantity, productName, format, price, cashback, onChange, warehouse }: Props) => {
     const T = useTranslations();
 
     return (
@@ -36,7 +37,11 @@ const ProductRow = ({ quantity, productName, format, price, cashback, onChange }
                         <CurrencyFormatter value={cashback}/>
                     </div>
                 </div>
-                <NumberField value={quantity} onChange={onChange} min={0}/>
+                <div>
+                    <div className={s.header}>{T('warehouse')}**</div>
+                    <div>{warehouse}</div>
+                </div>
+                <NumberField value={quantity} onChange={onChange}/>
             </div>
             <div className={s.separator}></div>
         </>

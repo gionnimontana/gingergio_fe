@@ -25,7 +25,7 @@ const ProductBox = ({ name, description, productId, imageRight }: Props) => {
                 <div className={s.description}>
                     {description.map((item, index) => <div className={s.descriptionText} key={index}>{item}</div>)}
                     <div className={s.descriptionActions}>
-                        <ActionButton label={open ? 'Nascondi' : T('productbox_mainbutton')} onClick={()=>setOpen((v)=>!v)} contrast={open}/>
+                        <ActionButton label={open ? T('hide') : T('productbox_mainbutton')} onClick={()=>setOpen((v)=>!v)} contrast={open}/>
                         {open ? <BuyBox productId={name}/> : null}
                     </div>
                 </div>

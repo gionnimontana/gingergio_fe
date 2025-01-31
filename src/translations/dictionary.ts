@@ -106,8 +106,8 @@ export const dictionary = {
         it: 'Torna ai prodotti'
     },
     basketStickyFooter_button2: {
-        en: 'Checkout',
-        it: 'Vai al checkout'
+        en: 'Confirm',
+        it: 'Conferma'
     },
     marketStickyFooter_label: {
         en: 'Go to basket',
@@ -185,6 +185,14 @@ export const dictionary = {
         it: 'Somma convertita in buono per nuovi acquisti una volta restituito il contenitore',
         en: 'Amount converted into a voucher for new purchases once the container is returned'
     },
+    warehouse_disclaimer: {
+        it: 'Numero di bottiglie subito disponibili per spedizione, quantità maggiori avrenno tempi di consegna più lunghi',
+        en: 'Number of bottles immediately available for shipping, larger quantities will have longer delivery times'
+    },
+    non_warehouse_disclaimer: {
+        it: 'Alcuni prodotti non sono disponibili in magazzino nella quantità richiesta, la spedizione o il ritiro richiedono 15 giorni aggiuntivi',
+        en: 'Some products are not available in stock, shipping or pickup requires an additional 15 days'
+    },
     price : {
         it: 'Prezzo',
         en: 'Price'
@@ -216,5 +224,13 @@ export const dictionary = {
     login_subscribe_text: {
         it: 'Accedi / Registrati',
         en: 'Login / Subscribe'
+    },
+    warehouse: {
+        it: 'Magazzino',
+        en: 'Warehouse'
+    },
+    hide: {
+        it: 'Nascondi',
+        en: 'Hide'
     },
 };

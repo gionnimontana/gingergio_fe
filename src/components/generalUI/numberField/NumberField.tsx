@@ -7,7 +7,7 @@ interface Props {
     onChange: (value: number) => void;
 }
 
-export const NumberField = ({ min, max, value, onChange }: Props) => {
+export const NumberField = ({ min = 0, max = 50, value, onChange }: Props) => {
   const disableMinus = min !== undefined && value <= min
   const disablePlus = max !== undefined && value >= max
 

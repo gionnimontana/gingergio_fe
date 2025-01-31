@@ -20,6 +20,7 @@ const PriceBox = ({ totalCashback, totalPrice }: Props) => {
                 </div>
             </div>
             <div className={s.cashbackDisclaimer}>* {T('cashback_disclaimer')}</div>
+            <div className={s.cashbackDisclaimer}>** {T('warehouse_disclaimer')}</div>
         </>
     );
 }

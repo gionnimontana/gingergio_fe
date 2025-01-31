@@ -26,7 +26,7 @@ const useBasket = () => {
 
     return {
         basket,
-        nonEmptyList: Object.values(basket).filter(item => item.quantity > 0),
+        noEmptyList: Object.values(basket).filter(item => item.quantity > 0),
         getTotalItemNumber: () => Object.values(basket).reduce((acc, item) => acc + item.quantity, 0),
         update: (basketItem: BasketItem) => {
             const key = `${basketItem.name}-${basketItem.format}`;
