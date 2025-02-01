@@ -20,7 +20,7 @@ const ConfirmOrderStickyFooter = () => {
     return (
         <StickyFooter>
             <ActionButton label={T('basketStickyFooter_button1')} onClick={goToBasket} contrast={!isEmpty()}/>
-            {!isEmpty() ? <ActionButton label={T('basketStickyFooter_button2')} onClick={goToBasket}/> : null}
+            {!isEmpty() ? <ActionButton label="demo" onClick={goToBasket}/> : null}
         </StickyFooter>
     );
 };
