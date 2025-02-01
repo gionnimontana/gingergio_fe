@@ -1,0 +1,27 @@
+.radioContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shadowBox {
+  box-shadow: var(--defaultBoxShadow);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input {
+    margin-right: 1rem;
+}
+
+.inputLabel {
+  width: 15rem;
+  margin-left: 1rem;
+}

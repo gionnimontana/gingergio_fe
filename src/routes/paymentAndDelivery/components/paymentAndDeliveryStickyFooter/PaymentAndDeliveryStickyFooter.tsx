@@ -1,28 +1,30 @@
 import { useNavigate } from "react-router-dom";
 import { routes } from "../../../../constants/routes";
 import useTranslations from "../../../../translations/useTranslations";
-import useBasket from "../../../../helpers/useBasket";
 import StickyFooter from "../../../../components/generalUI/stickyFooter/StickyFooter";
 import ActionButton from "../../../../components/generalUI/actionButton/ActionButton";
 import s from "./BasketStickyFooter.module.css";
 
-const BasketStickyFooter = () => {
-    const { isEmpty } = useBasket();
+interface Props {
+    canConfirm: boolean;
+}
+
+const PaymentAndDelivery = ({ canConfirm }: Props) => {
     const T = useTranslations();
     const navigate = useNavigate()
-    const goToPaymentAndDelivery = () => {
-        navigate(routes.PaymentAndDelivery)
+    const goToBasket = () => {
+        navigate(routes.Basket)
     }
-    const goToMarket = () => {
-        navigate(routes.Market)
+    const goToConfirmOrder = () => {
+        navigate(routes.ConfirmOrder)
     }
 
     return (
         <StickyFooter>
-            <ActionButton label={T('basketStickyFooter_button1')} onClick={goToMarket} contrast={true}/>
-            <ActionButton label={T('confirm')} onClick={goToPaymentAndDelivery} disabled={isEmpty()}/>
+            <ActionButton label={T('basketStickyFooter_button1')} onClick={goToBasket} contrast={true}/>
+            <ActionButton label={T('confirm')} onClick={goToConfirmOrder} disabled={canConfirm}/>
         </StickyFooter>
     );
 };
 
-export default BasketStickyFooter;
+export default PaymentAndDelivery;

@@ -98,14 +98,22 @@ export const dictionary = {
         it: 'Il tuo carrello'
     },
     basket_section1_text: {
-        en: 'Here you can see the products you have added to your basket. When you are ready, you can proceed to checkout.',
-        it: 'Qui puoi vedere i prodotti che hai aggiunto al tuo carrello. Quando sei pronto, puoi procedere al pagamento.'
+        it: 'Qui puoi vedere e modificare i prodotti che hai aggiunto al tuo carrello. Quando sei pronto, puoi procedere alla scelta del metodo di pagamento e di consegna.',
+        en: 'Here you can see the products you have added to your basket. When you are ready, you can proceed to choose the payment and delivery method.'
+    },
+    paymentAndDelivery_section1_title : {
+        en: 'Payment and delivery',
+        it: 'Pagamento e consegna'
+    },
+    paymentAndDelivery_section1_text: {
+        it: `Mi piacerebbe mostrarti diverse opzioni di pagamento e consegna, e presto sarà possibile (spero). Per il momento le uniche due opzioni disponibili sono il ritiro a mano presso il mio laboratorio di Cermenate (CO), oppure puoi inserire il tuo indirizzo per la consegna e prenotare un appuntamento che potrà essere confermato o respinto nel caso non fossi disponibile. Il pagamento avverrà direttamente al momento della consegna o del ritiro, e verranno effettuati contemporaneamente il recupero dei vetri e l'assegnazione del cashback.`,
+        en: `I would love to show you different payment and delivery options, and soon it will be possible (I hope). For the moment the only two available options are hand delivery at my laboratory in Cermenate (CO), or you can enter your address for home delivery and book an appointment, which can be confirmed or rejected if you are not available. Payment will be made directly at the time of delivery or collection, and the glass recovery and cashback assignment will be made simultaneously.`
     },
     basketStickyFooter_button1: {
         en: 'Back to products',
         it: 'Torna ai prodotti'
     },
-    basketStickyFooter_button2: {
+    confirm: {
         en: 'Confirm',
         it: 'Conferma'
     },
@@ -232,5 +240,13 @@ export const dictionary = {
     hide: {
         it: 'Nascondi',
         en: 'Hide'
+    },
+    paymentAndDelivery_radio1: {
+        it: 'Ritiro a mano',
+        en: 'Hand delivery'
+    },
+    paymentAndDelivery_radio2: {
+        it: 'Consegna a domicilio',
+        en: 'Home delivery'
     },
 };

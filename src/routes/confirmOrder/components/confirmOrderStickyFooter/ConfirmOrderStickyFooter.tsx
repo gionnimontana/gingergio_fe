@@ -6,23 +6,23 @@ import StickyFooter from "../../../../components/generalUI/stickyFooter/StickyFo
 import ActionButton from "../../../../components/generalUI/actionButton/ActionButton";
 import s from "./BasketStickyFooter.module.css";
 
-const BasketStickyFooter = () => {
+const ConfirmOrderStickyFooter = () => {
     const { isEmpty } = useBasket();
     const T = useTranslations();
     const navigate = useNavigate()
-    const goToPaymentAndDelivery = () => {
-        navigate(routes.PaymentAndDelivery)
+    const goToBasket = () => {
+        navigate(routes.Basket)
     }
-    const goToMarket = () => {
+    const goTo = () => {
         navigate(routes.Market)
     }
 
     return (
         <StickyFooter>
-            <ActionButton label={T('basketStickyFooter_button1')} onClick={goToMarket} contrast={true}/>
-            <ActionButton label={T('confirm')} onClick={goToPaymentAndDelivery} disabled={isEmpty()}/>
+            <ActionButton label={T('basketStickyFooter_button1')} onClick={goToBasket} contrast={!isEmpty()}/>
+            {!isEmpty() ? <ActionButton label={T('basketStickyFooter_button2')} onClick={goToBasket}/> : null}
         </StickyFooter>
     );
 };
 
-export default BasketStickyFooter;
+export default ConfirmOrderStickyFooter;

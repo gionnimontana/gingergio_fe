@@ -18,7 +18,7 @@
 .nonWarehouseDisclaimer {
     text-align: center;
     padding: 1rem;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    box-shadow: var(--defaultBoxShadow);
     font-size: 0.9rem;
 }
 
