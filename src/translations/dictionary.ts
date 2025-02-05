@@ -109,6 +109,14 @@ export const dictionary = {
         it: `Mi piacerebbe mostrarti diverse opzioni di pagamento e consegna, e presto sarà possibile (spero). Per il momento le uniche due opzioni disponibili sono il ritiro a mano presso il mio laboratorio di Cermenate (CO), oppure puoi inserire il tuo indirizzo per la consegna e prenotare un appuntamento che potrà essere confermato o respinto nel caso non fossi disponibile. Il pagamento avverrà direttamente al momento della consegna o del ritiro, e verranno effettuati contemporaneamente il recupero dei vetri e l'assegnazione del cashback.`,
         en: `I would love to show you different payment and delivery options, and soon it will be possible (I hope). For the moment the only two available options are hand delivery at my laboratory in Cermenate (CO), or you can enter your address for home delivery and book an appointment, which can be confirmed or rejected if you are not available. Payment will be made directly at the time of delivery or collection, and the glass recovery and cashback assignment will be made simultaneously.`
     },
+    authPage_section1_title: {
+        it: 'Dimmi qualcosa di te',
+        en: 'Tell me something about you'
+    },
+    authPage_section1_text: {
+        it: `Non mi interessa collezionare dati personali che non siano strettamente necessari alla gestione degli ordini. Ti chiedo un contatto solo per eventuali aggiornamenti sulla consegna e per evitare di inserire sempre le stesse informazioni in caso di ordini ripetuti, ma la scelta è tua. Se preferisci, puoi ordinare senza autenticarti: inserirai solo le informazioni essenziali, che verranno cancellate subito dopo la consegna.`,
+        en: `I am not interested in collecting personal data that is not strictly necessary for order management. I ask you for a contact only for any updates on delivery and to avoid always entering the same information in case of repeated orders, but the choice is yours. If you prefer, you can order without authenticating: you will only enter the essential information, which will be deleted immediately after delivery.`
+    },
     basketStickyFooter_button1: {
         en: 'Back to products',
         it: 'Torna ai prodotti'
@@ -117,7 +125,7 @@ export const dictionary = {
         en: 'Confirm',
         it: 'Conferma'
     },
-    marketStickyFooter_label: {
+    goToBasket: {
         en: 'Go to basket',
         it: 'Vai al carrello'
     },
@@ -225,13 +233,37 @@ export const dictionary = {
         it: 'Nome',
         en: 'Name'
     },
+    surname : {
+        it: 'Cognome',
+        en: 'Surname'
+    },
+    email : {
+        it: 'Email',
+        en: 'Email'
+    },
+    address : {
+        it: 'Indirizzo',
+        en: 'Address'
+    },
+    note : {
+        it: 'Note',
+        en: 'Note'
+    },
     empty_basket_text: {
         it: 'Il tuo carrello è vuoto',
         en: 'Your basket is empty'
     },
-    login_subscribe_text: {
-        it: 'Accedi / Registrati',
-        en: 'Login / Subscribe'
+    login: {
+        it: 'Accedi',
+        en: 'Login'
+    },
+    subscribe: {
+        it: 'Registrati',
+        en: 'Subscribe'
+    },
+    goNoAuth: {
+        it: 'Procedi senza autenticarti',
+        en: 'Go without authenticating'
     },
     warehouse: {
         it: 'Magazzino',
@@ -240,6 +272,22 @@ export const dictionary = {
     hide: {
         it: 'Nascondi',
         en: 'Hide'
+    },
+    user: {
+        it: 'Utente',
+        en: 'User'
+    },
+    password: {
+        it: 'Password',
+        en: 'Password'
+    },
+    showPassword: {
+        it: 'Mostra password',
+        en: 'Show password'
+    },
+    hidePassword: {
+        it: 'Nascondi password',
+        en: 'Hide password'
     },
     paymentAndDelivery_radio1: {
         it: 'Ritiro a mano',

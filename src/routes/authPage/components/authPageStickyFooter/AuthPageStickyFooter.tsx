@@ -3,27 +3,31 @@ import { routes } from "../../../../constants/routes";
 import useTranslations from "../../../../translations/useTranslations";
 import StickyFooter from "../../../../components/generalUI/stickyFooter/StickyFooter";
 import ActionButton from "../../../../components/generalUI/actionButton/ActionButton";
+import { AuthAction } from "../../AuthPage";
 
 interface Props {
-    canConfirm: boolean;
+    disableRight: boolean;
+    action: AuthAction;
+    onRightClick: () => void;
 }
 
-const PaymentAndDelivery = ({ canConfirm }: Props) => {
+const AuthPageStickyFooter = ({ disableRight, action, onRightClick }: Props) => {
     const T = useTranslations();
     const navigate = useNavigate()
     const goToBasket = () => {
         navigate(routes.Basket)
     }
-    const goToConfirmOrder = () => {
-        navigate(routes.ConfirmOrder)
-    }
-
+    
     return (
         <StickyFooter>
-            <ActionButton label={T('basketStickyFooter_button1')} onClick={goToBasket} contrast={true}/>
-            <ActionButton label={T('confirm')} onClick={goToConfirmOrder} disabled={canConfirm}/>
+            <ActionButton label={T('goToBasket')} onClick={goToBasket} contrast={true}/>
+            <ActionButton 
+                label={T('confirm')}
+                onClick={onRightClick}
+                disabled={disableRight}
+            />
         </StickyFooter>
     );
 };
 
-export default PaymentAndDelivery;
+export default AuthPageStickyFooter;

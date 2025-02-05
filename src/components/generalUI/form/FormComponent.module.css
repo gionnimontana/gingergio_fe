@@ -2,4 +2,26 @@
     width: calc(100% - 0.5rem);
     border-radius: 0.5rem;
     height: 2rem;
+    border-color: var(--backgroundDark);
+}
+
+.input:focus {
+    border: 2px solid var(--accent);
+    outline: none;
+}
+.input:focus-visible {
+    border: 2px solid var(--accent);
+    outline: none;
+}
+
+.doubleHeight {
+    height: 4rem;
+}
+
+.showPassword {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: underline;
 }

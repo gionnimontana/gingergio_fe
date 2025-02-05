@@ -1,14 +1,23 @@
+import { useState } from 'react';
 import Page from '../../components/page/Page';
 import FancySection from '../../components/generalUI/fancySection/FancySection';
 import useTranslations from '../../translations/useTranslations';
 import PaymentAndDeliveryFooter from './components/paymentAndDeliveryStickyFooter/PaymentAndDeliveryStickyFooter';
 import useBasket from '../../helpers/useBasket';
 import { checkIfNonWarehouseProducts, useWarehouse } from '../../queries/warehouse';
+import { FormComponent } from '../../components/generalUI/form/FormComponent';
+import { RadioContainer } from '../../components/generalUI/radioGroup/RadioContainer';
+import { RadioGroup } from '../../components/generalUI/radioGroup/RadioGroup';
 import s from './PaymentAndDelivery.module.css';
-import { useState } from 'react';
 
 export const PaymentAndDelivery = () => {
     const [delivery, setDelivery] = useState<'onsite'|'remote'>()
+    const [name, setName] = useState<string>('')
+    const [surname, setSurname] = useState<string>('')
+    const [email, setEmail] = useState<string>('')
+    const [address, setAddress] = useState<string>('')
+    const [note, setNote] = useState<string>('')
+
     const { data } = useWarehouse()
     const { noEmptyList } = useBasket()
     const T = useTranslations()
@@ -20,38 +29,23 @@ export const PaymentAndDelivery = () => {
             outsideChilds={<PaymentAndDeliveryFooter canConfirm={true}/>}
         >
             <FancySection header={T('paymentAndDelivery_section1_title')} content={T('paymentAndDelivery_section1_text')}/>
-            <div>
-                <div className={s.radioContainer}>
-                    <div className={s.shadowBox}>
-                        <div className={s.radioGroup}>
-                            <input className={s.input} type="radio" id="onsite" name="delivery" value="onsite" onChange={() => setDelivery('onsite')}/>
-                            <label className={s.inputLabel} htmlFor="onsite">{T('paymentAndDelivery_radio1')}</label>
-                        </div>
-                        {delivery === 'onsite' ? <div>
-                            <div className={s.inputLabel}>Nome*</div>
-                            <div className={s.inputLabel}>Cognome*</div>
-                            <div className={s.inputLabel}>Email*</div>
-                            <div className={s.inputLabel}>Note:</div>
-                            <div className={s.inputLabel}>Fascia di ritiro</div>
-                        </div> : null}
-                    </div>
-                    <div className={s.shadowBox}>
-                        <div className={s.radioGroup}>
-                            <input className={s.input} type="radio" id="remote" name="delivery" value="remote" onChange={() => setDelivery('remote')}/>
-                            <label className={s.inputLabel} htmlFor="remote">{T('paymentAndDelivery_radio2')}</label>
-                        </div>
-                        {delivery === 'remote' ? <div>
-                            <div className={s.inputLabel}>Nome*</div>
-                            <div className={s.inputLabel}>Cognome*</div>
-                            <div className={s.inputLabel}>Email*</div>
-                            <div className={s.inputLabel}>Indirizzo*</div>
-                            <div className={s.inputLabel}>Note:</div>
-                            <div className={s.inputLabel}>Data di consegna</div>
-                        </div> : null}
-                    </div>
-                </div>
-
-            </div>
+            <RadioContainer>
+                <RadioGroup expanded={delivery === 'onsite'} label={T('paymentAndDelivery_radio1')} onChange={() => setDelivery('onsite')}>
+                    <FormComponent className={s.form} text={name} setText={setName} label={T('name')}/>
+                    <FormComponent className={s.form} text={surname} setText={setSurname} label={T('surname')}/>
+                    <FormComponent className={s.form} text={email} setText={setEmail} label={T('email')}/>
+                    <FormComponent className={s.form} text={note} setText={setNote} label={T('note')} textarea={true}/>
+                    <div className={s.inputLabel}>{'fascio di ritiro'}</div>
+                </RadioGroup>
+                <RadioGroup expanded={delivery === 'remote'} label={T('paymentAndDelivery_radio2')} onChange={() => setDelivery('remote')}>
+                    <FormComponent className={s.form} text={name} setText={setName} label={T('name')}/>
+                    <FormComponent className={s.form} text={surname} setText={setSurname} label={T('surname')}/>
+                    <FormComponent className={s.form} text={email} setText={setEmail} label={T('email')}/>
+                    <FormComponent className={s.form} text={address} setText={setAddress} label={T('address')}/>
+                    <FormComponent className={s.form} text={note} setText={setNote} label={T('note')}/>
+                    <div className={s.inputLabel}>{'data di consegna'}</div>
+                </RadioGroup>
+            </RadioContainer>
         </Page>
     );
 }

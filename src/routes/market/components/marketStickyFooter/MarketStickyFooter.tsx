@@ -16,7 +16,7 @@ const MarketStickyFooter = () => {
 
     if (isEmpty()) return null;
 
-    const label = `${T('marketStickyFooter_label')} (${getTotalItemNumber()})`;
+    const label = `${T('goToBasket')} (${getTotalItemNumber()})`;
 
     return (
         <StickyFooter>

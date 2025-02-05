@@ -10,8 +10,8 @@ const BasketStickyFooter = () => {
     const { isEmpty } = useBasket();
     const T = useTranslations();
     const navigate = useNavigate()
-    const goToPaymentAndDelivery = () => {
-        navigate(routes.PaymentAndDelivery)
+    const goToAuthPage = () => {
+        navigate(routes.AuthPage)
     }
     const goToMarket = () => {
         navigate(routes.Market)
@@ -20,7 +20,7 @@ const BasketStickyFooter = () => {
     return (
         <StickyFooter>
             <ActionButton label={T('basketStickyFooter_button1')} onClick={goToMarket} contrast={true}/>
-            <ActionButton label={T('confirm')} onClick={goToPaymentAndDelivery} disabled={isEmpty()}/>
+            <ActionButton label={T('confirm')} onClick={goToAuthPage} disabled={isEmpty()}/>
         </StickyFooter>
     );
 };

@@ -5,6 +5,7 @@ import { Market } from "./market/Market";
 import { Basket } from "./basket/Basket";
 import { ConfirmOrder } from "./confirmOrder/ConfirmOrder";
 import { PaymentAndDelivery } from "./paymentAndDelivery/PaymentAndDelivery";
+import { AuthPage } from "./authPage/AuthPage";
   
 export const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
   {
     path: routes.Basket,
     element: <Basket/>,
+  },
+  {
+    path: routes.AuthPage,
+    element: <AuthPage/>,
   },
   {
     path: routes.PaymentAndDelivery,
