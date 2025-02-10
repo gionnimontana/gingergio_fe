@@ -47,18 +47,24 @@ export const AuthPage = ({ nextRoute }: Props) => {
         }
     }
 
+    const disableRight = !authAction || isLoading || subscribeStep === 'confirm'
+
     return (
         <Page
             outsideChilds={
                 <PaymentAndDeliveryFooter 
-                    disableRight={isLoading || subscribeStep === 'confirm'} 
+                    disableRight={disableRight} 
                     action={authAction} 
                     onRightClick={onRightClick}
                     isLoading={isLoading || subscribeStep === 'confirm'}
                 />
             }
         >
-            <FancySection header={T('authPage_section1_title')} content={T('authPage_section1_text')}/>
+            <FancySection 
+                header={T('authPage_section1_title')} 
+                content={T('authPage_section1_text')}
+                keyWords={['cashback']}
+            />
             <RadioContainer>
                 <RadioGroup 
                     expanded={authAction === 'login'} 

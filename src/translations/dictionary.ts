@@ -22,8 +22,8 @@ export const dictionary = {
         en: 'My creations are born from the ginger mother yeast, the famous ginger bug, a fermented ingredient that guarantees a natural effervescence and a load of beneficial probiotics. Not only delicious, but also allies for your intestinal health and your daily balance.'
     },
     home_section1c_text: {
-        it: 'Tutto ciò che produco è fatto con amore e attenzione: fermentazione lenta, corta lista di ingredienti composti esclusivamente da prodotti freschi, di alta qualità, al minimo grado di lavorazione. Se stai cercando qualcosa di diverso, salutare e speciale, sei nel posto giusto. Esplora i miei prodotti, scopri il potere del lievito madre di zenzero e lasciati conquistare da un’alternativa che fa bene a te e all’ambiente.',
-        en: 'Everything I produce is made with love and attention: slow fermentation, short list of ingredients composed exclusively of fresh, high-quality products, with minimal processing. If you are looking for something different, healthy and special, you are in the right place. Explore my products, discover the power of ginger mother yeast and let yourself be won over by an alternative that is good for you and the environment.'
+        it: 'Tutto ciò che produco è fatto con amore e attenzione: fermentazione lenta, corta lista di ingredienti composti esclusivamente da prodotti freschi, di alta qualità, al minimo grado di lavorazione. Se stai cercando qualcosa di diverso, salutare e speciale, sei nel posto giusto. Esplora i miei prodotti e lasciati conquistare da un’alternativa che fa bene a te e all’ambiente.',
+        en: 'Everything I produce is made with love and attention: slow fermentation, short list of ingredients composed exclusively of fresh, high-quality products, with minimal processing. If you are looking for something different, healthy and special, you are in the right place. Explore my products and let yourself be won over by an alternative that is good for you and the environment.'
     },
     home_section2_title: {
         it: 'Trasparenza e sostenibilità',
@@ -38,28 +38,28 @@ export const dictionary = {
         en: 'Many bacteria, but the good ones!'
     },
     home_section3a_text: {
-        it: 'Il ginger bug è una coltura mista composta principalmente da lieviti selvatici e batteri lattici che si sviluppano naturalmente sullo zenzero fresco e nell\'ambiente. Ecco i microorganismi principali che lo compongono',
-        en: 'The ginger bug is a mixed culture composed mainly of wild yeasts and lactic bacteria that develop naturally on fresh ginger and in the environment. Here are the main microorganisms that compose it'
+        it: 'Il ginger bug è una coltura mista composta principalmente da lieviti selvatici e batteri lattici che si sviluppano naturalmente sullo zenzero fresco e nell\'ambiente. Ecco i microorganismi principali che lo compongono:',
+        en: 'The ginger bug is a mixed culture composed mainly of wild yeasts and lactic bacteria that develop naturally on fresh ginger and in the environment. Here are the main microorganisms that compose it:'
     },
     home_section3b_text: {
         it: 'Lieviti selvatici: Saccharomyces spp., Candida spp., Pichia spp. Funzione: Consumano gli zuccheri presenti nella miscela per produrre alcol (etanolo) e anidride carbonica (CO₂), responsabile della frizzantezza. Forniscono il "motore" della fermentazione alcolica.',
         en: 'Wild yeasts: Saccharomyces spp., Candida spp., Pichia spp. Function: They consume the sugars present in the mixture to produce alcohol (ethanol) and carbon dioxide (CO₂), responsible for the effervescence. They provide the "engine" of alcoholic fermentation.'
     },
     home_section3c_text: {
-        it: 'Batteri lattici (LAB - Lactic Acid Bacteria): Lactobacillus spp., Leuconostoc spp. Funzione: Convertono gli zuccheri in acido lattico, che abbassa il pH e conferisce un sapore leggermente acido. Inibiscono la crescita di batteri indesiderati grazie all\'acidificazione del mezzo.',
-        en: 'Lactic bacteria (LAB - Lactic Acid Bacteria): Lactobacillus spp., Leuconostoc spp. Function: They convert sugars into lactic acid, which lowers the pH and gives a slightly acidic flavor. They inhibit the growth of unwanted bacteria thanks to the acidification of the medium.'
+        it: 'Batteri lattici: Lactobacillus spp., Leuconostoc spp. Funzione: Convertono gli zuccheri in acido lattico, che abbassa il pH e conferisce un sapore leggermente acido. Inibiscono la crescita di batteri indesiderati grazie all\'acidificazione del mezzo.',
+        en: 'Lactic bacteria: Lactobacillus spp., Leuconostoc spp. Function: They convert sugars into lactic acid, which lowers the pH and gives a slightly acidic flavor. They inhibit the growth of unwanted bacteria thanks to the acidification of the medium.'
     },
     home_section3d_text: {
-        it: 'Batteri acetici (in misura minore): Acetobacter spp. Funzione: In presenza di ossigeno, convertono l\'etanolo (prodotto dai lieviti) in acido acetico. Contribuiscono al profilo aromatico leggermente pungente.',
-        en: 'Acetic bacteria (to a lesser extent): Acetobacter spp. Function: In the presence of oxygen, they convert ethanol (produced by yeasts) into acetic acid. They contribute to the slightly pungent aromatic profile.'
+        it: 'Batteri acetici: Acetobacter spp. Funzione: In presenza di ossigeno, convertono l\'etanolo (prodotto dai lieviti) in acido acetico. Contribuiscono al profilo aromatico leggermente pungente.',
+        en: 'Acetic bacteria: Acetobacter spp. Function: In the presence of oxygen, they convert ethanol (produced by yeasts) into acetic acid. They contribute to the slightly pungent aromatic profile.'
     },
     home_section4_title: {
         it: 'Benefici per la salute',
         en: 'Health benefits'
     },
     home_section4a_text: {
-        it: 'Interazione tra i microorganismi: I lieviti e i batteri lattici lavorano in simbiosi. I lieviti producono etanolo e anidride carbonica, creando un ambiente favorevole per i batteri lattici. I batteri lattici abbassano il pH, proteggendo il ginger bug da contaminazioni indesiderate. Questa interazione crea una fermentazione equilibrata, risultando in una miscela leggermente acida e frizzante.',
-        en: 'Interaction between microorganisms: Yeasts and lactic bacteria work in symbiosis. Yeasts produce ethanol and carbon dioxide, creating a favorable environment for lactic bacteria. Lactic bacteria lower the pH, protecting the ginger bug from unwanted contaminations. This interaction creates a balanced fermentation, resulting in a slightly acidic and effervescent mixture.'
+        it: 'I lieviti e i batteri lattici lavorano in simbiosi. I lieviti producono etanolo e anidride carbonica, creando un ambiente favorevole per i batteri lattici. I batteri lattici abbassano il pH, proteggendo il ginger bug da contaminazioni indesiderate. Questa interazione crea una fermentazione equilibrata, risultando in una miscela leggermente acida e frizzante.',
+        en: 'Yeasts and lactic bacteria work in symbiosis. Yeasts produce ethanol and carbon dioxide, creating a favorable environment for lactic bacteria. Lactic bacteria lower the pH, protecting the ginger bug from unwanted contaminations. This interaction creates a balanced fermentation, resulting in a slightly acidic and effervescent mixture.'
     },
     home_section4b_text: {
         it: 'Supporto alla salute intestinale: Equilibrio del microbiota: I batteri lattici (Lactobacillus, Leuconostoc) possono contribuire a mantenere un equilibrio sano nel microbiota intestinale, riducendo la presenza di batteri patogeni. Facilitazione della digestione: Questi batteri aiutano a digerire più facilmente alcuni nutrienti e possono ridurre gonfiore e gas intestinali.',
@@ -114,8 +114,8 @@ export const dictionary = {
         en: 'Tell me something about you'
     },
     authPage_section1_text: {
-        it: `Non mi interessa collezionare dati personali che non siano strettamente necessari alla gestione degli ordini. Ti chiedo un contatto solo per eventuali aggiornamenti sulla consegna e per evitare di inserire sempre le stesse informazioni in caso di ordini ripetuti, ma la scelta è tua. Se preferisci, puoi ordinare senza autenticarti: inserirai solo le informazioni essenziali, che verranno cancellate subito dopo la consegna.`,
-        en: `I am not interested in collecting personal data that is not strictly necessary for order management. I ask you for a contact only for any updates on delivery and to avoid always entering the same information in case of repeated orders, but the choice is yours. If you prefer, you can order without authenticating: you will only enter the essential information, which will be deleted immediately after delivery.`
+        it: `Non mi interessa collezionare dati personali che non siano strettamente necessari alla gestione degli ordini. Ti chiedo un contatto per eventuali aggiornamenti sulla consegna e per l'assegnazione del cashback, ma la scelta è tua. Se preferisci, puoi ordinare senza autenticarti: inserirai solo le informazioni essenziali, che verranno cancellate subito dopo la consegna.`,
+        en: `I am not interested in collecting personal data that is not strictly necessary for order management. I ask you for a contact for any updates on delivery and for the assignment of cashback, but the choice is yours. If you prefer, you can order without authenticating: you will only enter the essential information, which will be deleted immediately after delivery.`
     },
     basketStickyFooter_button1: {
         en: 'Back to products',

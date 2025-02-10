@@ -14,7 +14,11 @@ export const Market = () => {
         <Page
             outsideChilds={<MarketStickyFooter/>}
         >
-            <FancySection content={T('market_section1_text')} className={s.extrapadding}/>
+            <FancySection 
+                content={T('market_section1_text')} 
+                className={s.extrapadding}
+                keyWords={['traceability', 'transparency', 'passione', 'tracciabilità', 'trasparenza', 'passion']}
+            />
             <div className={s.productsContainer}>
                 <ProductBox 
                     name='House Pride' 

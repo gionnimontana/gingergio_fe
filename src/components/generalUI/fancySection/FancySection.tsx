@@ -1,4 +1,5 @@
 import FancyHeader from '../fancyHeader/FancyHeader';
+import HighlightKeyword from '../highlightKeyword/HighlightKeyword';
 import s from './FancySection.module.css';
 
 interface Props {
@@ -10,9 +11,10 @@ interface Props {
         right?: boolean
     }
     className?: string
+    keyWords?: string[]
 }
 
-const FancySection = ({ header, content, img, className }: Props) => {
+const FancySection = ({ header, content, img, className, keyWords }: Props) => {
 
   const contentIsArray = Array.isArray(content)
   const imgIsRight = img && img.right
@@ -29,8 +31,11 @@ const FancySection = ({ header, content, img, className }: Props) => {
           {content ? (
             <div>
               {contentIsArray ? 
-                content.map((item, index) => <div className={s.content} key={index}>{item}</div>)
-                : <div className={s.content}>{content}</div> }
+                content.map((item, index) => (
+                <HighlightKeyword className={s.content} text={item} key={index} keywords={keyWords}/>
+              )) : (
+                <HighlightKeyword className={s.content} text={content} keywords={keyWords}/>
+              )}
             </div> 
           ) : null}
         </div>
