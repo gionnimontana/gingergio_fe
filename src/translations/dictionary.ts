@@ -11,7 +11,7 @@ export const dictionary = {
     },
     buybutton_label: {
         en: 'Shop',
-        it: 'Acquista'
+        it: 'Negozio'
     },
     home_section1a_text: {
         en: 'Nice to meet you, I am Ginger Gio The father of a unique line of probiotic beverages, created with passion and dedication. With my products, I want to offer you a healthy, fresh and tasty alternative to traditional soft drinks and alcoholic beverages.',
@@ -281,6 +281,10 @@ export const dictionary = {
         it: 'Password',
         en: 'Password'
     },
+    password_confirm: {
+        it: 'Conferma password',
+        en: 'Confirm password'
+    },
     showPassword: {
         it: 'Mostra password',
         en: 'Show password'
@@ -297,4 +301,16 @@ export const dictionary = {
         it: 'Consegna a domicilio',
         en: 'Home delivery'
     },
+    loginErrorMsg: {
+        it: '⚠️ Email o password non validi ⚠️',
+        en: '⚠️ Invalid email or password ⚠️'
+    },
+    confirmCode: {
+        it: 'Codice di conferma',
+        en: 'Confirmation code'
+    },
+    emailVerifyRequest: {
+        it: 'Una email con il link di conferma è stata inviata al tuo indirizzo, clicca sul link per completare la registrazione e poi ritorna su questa pagine per procedere con la navigazione',
+        en: 'An email with the confirmation link has been sent to your address, click on the link to complete the registration and then return to this page to proceed with navigation'
+    }
 };

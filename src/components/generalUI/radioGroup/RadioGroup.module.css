@@ -31,3 +31,10 @@
     margin: 1rem 0rem;
     padding: 1rem;
   }
+
+  .errorMsg {
+    padding: 0rem 1rem;
+    margin: 0.5rem 0rem;
+    text-align: center;
+    max-width: 30rem;
+  }

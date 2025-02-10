@@ -1,8 +1,15 @@
 import s from './Spinner.module.css';
 
-const Spinner = () => {
+interface Props {
+    className?: string
+}
+
+const Spinner = ({ className }: Props) => {
+
+    const cn = className ? s.spinner + ' ' + className : s.spinner
+
     return (
-        <div className={s.spinner}></div>
+        <div className={cn}></div>
     )
 }
 

@@ -1,5 +1,4 @@
 .button{
-    display:inline-block;
     background: var(--accent);
     padding:0.75em 0em;
     display:block;
@@ -10,6 +9,8 @@
     margin: auto;
     font-size: 1rem;
     color: var(--backgroundLight);
+    display: flex;
+    justify-content: center;
 }
 .button:hover{
     background: var(--accentDark);
@@ -26,6 +27,15 @@
 }
 .disabled:hover{
     background: var(--disabled);
+}
+.isLoading{
+    background: var(--disabled);
+    cursor: not-allowed;
+}
+
+.spinner {
+    width: 1rem;
+    height: 1rem;
 }
 
   

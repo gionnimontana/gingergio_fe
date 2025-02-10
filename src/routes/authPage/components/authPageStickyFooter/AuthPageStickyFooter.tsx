@@ -9,9 +9,10 @@ interface Props {
     disableRight: boolean;
     action: AuthAction;
     onRightClick: () => void;
+    isLoading: boolean;
 }
 
-const AuthPageStickyFooter = ({ disableRight, action, onRightClick }: Props) => {
+const AuthPageStickyFooter = ({ disableRight, action, onRightClick, isLoading }: Props) => {
     const T = useTranslations();
     const navigate = useNavigate()
     const goToBasket = () => {
@@ -25,6 +26,7 @@ const AuthPageStickyFooter = ({ disableRight, action, onRightClick }: Props) => 
                 label={T('confirm')}
                 onClick={onRightClick}
                 disabled={disableRight}
+                isLoading={isLoading}
             />
         </StickyFooter>
     );
