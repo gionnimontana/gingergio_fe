@@ -1,4 +1,3 @@
-import { smartNotification } from "../components/generalUI/notifications/notifications"
 import { pb } from "./pb"
 
 const sendServerRequest = async (method: string, url: string, payload?: any) => {
@@ -18,7 +17,7 @@ const sendServerRequest = async (method: string, url: string, payload?: any) => 
 
   if (response.status === 401) {
     pb.authStore.clear();
-    smartNotification('La tua sessione è scaduta, esci ed effettua nuovamente il login')
+    console.log('La tua sessione è scaduta, esci ed effettua nuovamente il login')
   }
   return response
 }
