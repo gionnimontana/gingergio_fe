@@ -16,7 +16,6 @@ export const Market = () => {
         >
             <FancySection 
                 content={T('market_section1_text')} 
-                className={s.extrapadding}
                 keyWords={['traceability', 'transparency', 'passione', 'tracciabilità', 'trasparenza', 'passion']}
             />
             <div className={s.productsContainer}>
