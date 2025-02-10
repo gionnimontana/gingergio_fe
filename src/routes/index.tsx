@@ -6,6 +6,7 @@ import { Basket } from "./basket/Basket";
 import { ConfirmOrder } from "./confirmOrder/ConfirmOrder";
 import { PaymentAndDelivery } from "./paymentAndDelivery/PaymentAndDelivery";
 import { AuthPage } from "./authPage/AuthPage";
+import { User } from "./user/User"
   
 export const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ export const router = createBrowserRouter([
   },
   {
     path: routes.AuthPage,
-    element: <AuthPage/>,
+    element: <AuthPage nextRoute={routes.PaymentAndDelivery}/>,
   },
   {
     path: routes.PaymentAndDelivery,
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
   {
     path: routes.ConfirmOrder,
     element: <ConfirmOrder/>,
+  },
+  {
+    path: routes.User,
+    element: <User/>
   },
   {
     path: '*',

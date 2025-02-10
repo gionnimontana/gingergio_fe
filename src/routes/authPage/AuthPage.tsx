@@ -8,32 +8,34 @@ import { RadioGroup } from '../../components/generalUI/radioGroup/RadioGroup';
 import { FormComponent } from '../../components/generalUI/form/FormComponent';
 import useUser from '../../helpers/useUser/useUser';
 import { useNavigate } from 'react-router-dom';
-import { routes } from '../../constants/routes';
-import { pb } from '../../helpers/pb';
 import s from './AuthPage.module.css';
 
 export type AuthAction = 'login'|'subscribe'|'goNoAuth' | undefined
 
-export const AuthPage = () => {
+interface Props {
+    nextRoute?: string
+}
+
+export const AuthPage = ({ nextRoute }: Props) => {
     const { login, message, isLoading, user, subscribe, noAuthLogin } = useUser()
     const [authAction, setAuthAction] = useState<AuthAction>()
-    const [email, setEmail] = useState<string>(user?.model.email || '')
+    const [email, setEmail] = useState<string>(user?.model?.email || '')
     const [password, setPassword] = useState<string>('')
     const [subscribeStep, setSubscribeStep] = useState<'request'|'confirm'>('request')
     
     const T = useTranslations()
     const navigate = useNavigate()
-    const goToPaymentAndDelivery = () => navigate(routes.PaymentAndDelivery)
+    const goNextRoute = () => nextRoute ? navigate(nextRoute) : null
 
     useEffect(() => {
-        if (!user || !user.model.id) return;
-        if (user.model.verified) goToPaymentAndDelivery();
+        if (!user || !user.model?.id) return;
+        if (user.model.verified || user.model.anonymous) goNextRoute();
     }, [user]);
 
     const onRightClick = async () => {
         if (authAction === 'login') {
             const success = await login(email, password);
-            if (success) goToPaymentAndDelivery();
+            if (success) goNextRoute();
         }
         if (authAction === 'subscribe') {
             const success = await subscribe(email, password);
@@ -41,7 +43,7 @@ export const AuthPage = () => {
         }
         if (authAction === 'goNoAuth') {
             const success = await noAuthLogin();
-            if (success) goToPaymentAndDelivery();
+            if (success) goNextRoute();
         }
     }
 

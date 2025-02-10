@@ -4,6 +4,7 @@ import useTranslations from "../../../../translations/useTranslations";
 import StickyFooter from "../../../../components/generalUI/stickyFooter/StickyFooter";
 import ActionButton from "../../../../components/generalUI/actionButton/ActionButton";
 import { AuthAction } from "../../AuthPage";
+import OnKeyPress from "../../../../components/generalUI/onKeyPress/OnKeyPress";
 
 interface Props {
     disableRight: boolean;
@@ -21,6 +22,7 @@ const AuthPageStickyFooter = ({ disableRight, action, onRightClick, isLoading }:
     
     return (
         <StickyFooter>
+            <OnKeyPress keypress="enter" callback={onRightClick} disable={disableRight}/>
             <ActionButton label={T('goToBasket')} onClick={goToBasket} contrast={true}/>
             <ActionButton 
                 label={T('confirm')}

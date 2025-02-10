@@ -9,4 +9,5 @@ export interface User {
     name: string
     updated: string
     verified: boolean
+    anonymous: boolean
 }

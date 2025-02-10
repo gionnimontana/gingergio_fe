@@ -33,8 +33,8 @@ const useUser = () => {
     }, []);
 
     useEffect(() => {
-        if (!user || !user.model.id) return;
-        pb.collection('users').subscribe(user?.model.id, (e: any) => {
+        if (!user || !user.model?.id) return;
+        pb.collection('users').subscribe(user?.model?.id, (e: any) => {
             userStore.set({ ...user, model: e.record });
         });
         return () => {
@@ -51,7 +51,7 @@ const useUser = () => {
             try {
                 const res: any = await pb.collection('users').authWithPassword(email, password);
                 if (res.record.id) {
-                    userStore.set({ model: res, token: undefined });
+                    userStore.set({ ...user, model: res.record });
                     if (!res.record.verified) {
                         await pb.collection('users').requestVerification(email);
                         setmessage(T('emailVerifyRequest'));
@@ -87,7 +87,7 @@ const useUser = () => {
                 const requestVerification = await pb.collection('users').requestVerification(email);
                 const login = await pb.collection('users').authWithPassword(email, password);
                 if (res.id && requestVerification && login.record.id) {
-                    userStore.set({ model: res, token: undefined });
+                    userStore.set({ ...user, model: res });
                     setmessage(T('emailVerifyRequest'));
                     success = true;
                 }

@@ -257,6 +257,10 @@ export const dictionary = {
         it: 'Accedi',
         en: 'Login'
     },
+    logout: {
+        it: 'Logout',
+        en: 'Logout'
+    },
     subscribe: {
         it: 'Registrati',
         en: 'Subscribe'
@@ -300,6 +304,14 @@ export const dictionary = {
     paymentAndDelivery_radio2: {
         it: 'Consegna a domicilio',
         en: 'Home delivery'
+    },
+    userPage_header: {
+        it: 'Il tuo profilo',
+        en: 'Your profile'
+    },
+    userPage_content: {
+        it: 'Qui puoi vedere e gestire i tuoi ordini e le informazioni del tuo profilo',
+        en: 'Here you can see your past orders and your profile information'
     },
     loginErrorMsg: {
         it: '⚠️ Email o password non validi ⚠️',
