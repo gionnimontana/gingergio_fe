@@ -51,13 +51,12 @@ const useUser = () => {
             try {
                 const res: any = await pb.collection('users').authWithPassword(email, password);
                 if (res.record.id) {
-                    success = true;
                     userStore.set({ model: res, token: undefined });
                     if (!res.record.verified) {
-                        success = false;
                         await pb.collection('users').requestVerification(email);
                         setmessage(T('emailVerifyRequest'));
                     } else {
+                        success = true;
                         setIsLoading(false);
                     }
                 } else {
@@ -65,7 +64,7 @@ const useUser = () => {
                     throw new Error('No user found');
                 }
             } catch (e) {
-                setmessage('login error');
+                setmessage(T('loginErrorMsg'));
                 setIsLoading(false);
             } finally {
                 return success;
@@ -103,6 +102,33 @@ const useUser = () => {
                     const emailMsg = `⚠️ Email ${emailMsgRaw} ⚠️`;
                     setmessage(emailMsg);
                 }
+            } finally {
+                setIsLoading(false);
+                return success;
+            }
+        },
+        noAuthLogin: async () => {
+            setmessage(undefined);
+            setIsLoading(true);
+            let success = false;
+            const randomPwd = `${Math.random().toString(36).slice(2)}`;
+            const randomEmail = `${Math.random().toString(36).substring(7)}@gingergio.it`;
+            const data = {
+                "password": randomPwd,
+                "passwordConfirm": randomPwd,
+                "email": randomEmail,
+                "emailVisibility": false,
+                "anonymous": true
+            };
+            try {
+                const res: any = await pb.collection('users').create(data);
+                const login = await pb.collection('users').authWithPassword(randomEmail, randomPwd);
+                if (res.id && login.record.id) {
+                    userStore.set({ model: res, token: undefined });
+                    success = true;
+                }
+            } catch (e: any) {
+                setmessage(T('genericError'));
             } finally {
                 setIsLoading(false);
                 return success;

@@ -15,7 +15,7 @@ import s from './AuthPage.module.css';
 export type AuthAction = 'login'|'subscribe'|'goNoAuth' | undefined
 
 export const AuthPage = () => {
-    const { login, message, isLoading, user, subscribe } = useUser()
+    const { login, message, isLoading, user, subscribe, noAuthLogin } = useUser()
     const [authAction, setAuthAction] = useState<AuthAction>()
     const [email, setEmail] = useState<string>(user?.model.email || '')
     const [password, setPassword] = useState<string>('')
@@ -38,6 +38,10 @@ export const AuthPage = () => {
         if (authAction === 'subscribe') {
             const success = await subscribe(email, password);
             if (success) setSubscribeStep('confirm')
+        }
+        if (authAction === 'goNoAuth') {
+            const success = await noAuthLogin();
+            if (success) goToPaymentAndDelivery();
         }
     }
 
@@ -80,6 +84,7 @@ export const AuthPage = () => {
                     expanded={authAction === 'goNoAuth'} 
                     label={T('goNoAuth')} 
                     onChange={() => setAuthAction('goNoAuth')} 
+                    message={message}
                 />
             </RadioContainer>
         </Page>

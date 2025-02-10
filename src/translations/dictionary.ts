@@ -312,5 +312,9 @@ export const dictionary = {
     emailVerifyRequest: {
         it: 'Una email con il link di conferma è stata inviata al tuo indirizzo, clicca sul link per completare la registrazione e poi ritorna su questa pagine per procedere con la navigazione',
         en: 'An email with the confirmation link has been sent to your address, click on the link to complete the registration and then return to this page to proceed with navigation'
-    }
+    },
+    genericError: {   
+        it: '⚠️ Si è verificato un errore, riprova più tardi ⚠️',
+        en: '⚠️ An error occurred, try again later ⚠️'
+    },
 };
