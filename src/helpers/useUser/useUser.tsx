@@ -35,7 +35,7 @@ const useUser = () => {
     useEffect(() => {
         if (!user || !user.model.id) return;
         pb.collection('users').subscribe(user?.model.id, (e: any) => {
-            setUser({ ...user, model: e.record });
+            userStore.set({ ...user, model: e.record });
         });
         return () => {
             pb.collection('users').unsubscribe();
@@ -52,7 +52,7 @@ const useUser = () => {
                 const res: any = await pb.collection('users').authWithPassword(email, password);
                 if (res.record.id) {
                     success = true;
-                    setUser({ model: res, token: undefined });
+                    userStore.set({ model: res, token: undefined });
                     if (!res.record.verified) {
                         success = false;
                         await pb.collection('users').requestVerification(email);
@@ -88,7 +88,7 @@ const useUser = () => {
                 const requestVerification = await pb.collection('users').requestVerification(email);
                 const login = await pb.collection('users').authWithPassword(email, password);
                 if (res.id && requestVerification && login.record.id) {
-                    setUser({ model: res, token: undefined });
+                    userStore.set({ model: res, token: undefined });
                     setmessage(T('emailVerifyRequest'));
                     success = true;
                 }
@@ -109,7 +109,7 @@ const useUser = () => {
             }
         },
         logout: () => {
-            setUser(undefined);
+            userStore.set(undefined);
             localStorage.removeItem(userStorageKey);
         },
         message,

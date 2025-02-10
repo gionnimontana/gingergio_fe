@@ -32,8 +32,8 @@ export const AuthPage = () => {
 
     const onRightClick = async () => {
         if (authAction === 'login') {
-            await login(email, password);
-            if (user?.model.verified) goToPaymentAndDelivery();
+            const success = await login(email, password);
+            if (success) goToPaymentAndDelivery();
         }
         if (authAction === 'subscribe') {
             const success = await subscribe(email, password);
