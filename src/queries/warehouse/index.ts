@@ -44,8 +44,9 @@ export const getNameAndFormatWarehouse = (warehouse: Warehouse[] | undefined, re
     if (!warehouse) {
         return 0;
     }
-    const quantity = warehouse.find((wh) => wh.expand.recipe.name === recipeName && wh.expand.bottle_type.name === formatName);
-    return quantity ? quantity.quantity : 0;
+    const targets = warehouse.filter((wh) => wh.expand.recipe.name === recipeName && wh.expand.bottle_type.name === formatName);
+    const quantity = targets.reduce((acc, curr) => acc + curr.quantity, 0);
+    return quantity;
 }
 
 export const checkIfNonWarehouseProducts = (warehouse: Warehouse[] | undefined, basketList: BasketItem[]): boolean => {

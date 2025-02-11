@@ -9,7 +9,7 @@ export const User = () => {
     const { user, logout } = useUser()
     const T = useTranslations()
 
-    const showProfile = user?.model?.verified
+    const showProfile = user?.model
 
     if (!showProfile) return <AuthPage/>
 

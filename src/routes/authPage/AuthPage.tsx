@@ -88,12 +88,12 @@ export const AuthPage = ({ nextRoute }: Props) => {
                         </>
                     ) : null}
                 </RadioGroup>
-                <RadioGroup 
+                {nextRoute ? <RadioGroup 
                     expanded={authAction === 'goNoAuth'} 
                     label={T('goNoAuth')} 
                     onChange={() => setAuthAction('goNoAuth')} 
                     message={message}
-                />
+                /> : null}
             </RadioContainer>
         </Page>
     );
