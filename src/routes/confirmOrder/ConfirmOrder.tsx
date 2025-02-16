@@ -14,7 +14,7 @@ export const ConfirmOrder = () => {
         >
             <FancySection 
                 header={T('confirmOrder_section1_title')} 
-                content={[T('confirmOrder_section1_text'), T('confirmOrder_section1a_text')]}$
+                content={[T('confirmOrder_section1_text'), T('confirmOrder_section1a_text')]}
                 keyWords={['info@gingergio.it']}
             />
         </Page>
