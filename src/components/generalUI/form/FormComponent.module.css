@@ -3,6 +3,7 @@
     border-radius: 0.5rem;
     height: 2rem;
     border-color: var(--backgroundDark);
+    border-width: 2px;
 }
 
 .input:focus {

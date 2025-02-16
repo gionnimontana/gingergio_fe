@@ -12,7 +12,11 @@ export const ConfirmOrder = () => {
         <Page
             outsideChilds={<ConfirmOrderStickyFooter/>}
         >
-            <FancySection header={T('basket_section1_title')} content={T('basket_section1_text')}/>
+            <FancySection 
+                header={T('confirmOrder_section1_title')} 
+                content={[T('confirmOrder_section1_text'), T('confirmOrder_section1a_text')]}$
+                keyWords={['info@gingergio.it']}
+            />
         </Page>
     );
 }

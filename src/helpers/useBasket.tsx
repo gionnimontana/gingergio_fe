@@ -34,7 +34,8 @@ const useBasket = () => {
             localStorage.setItem(basketKey, JSON.stringify(basketStore.get()));
         },
         isEmpty: () => {
-            return Object.values(basket).reduce((acc, item) => acc + item.quantity, 0) === 0;
+            const totalQuantity = Object.values(basket).reduce((acc, item) => acc + item.quantity, 0);
+            return !Boolean(totalQuantity);
         },
         getTotalPrice: () => Object.values(basket).reduce((acc, item) => acc + item.price * item.quantity, 0),
         getTotalCashback: () => Object.values(basket).reduce((acc, item) => acc + item.cashback * item.quantity, 0),
@@ -57,6 +58,10 @@ const useBasket = () => {
                 quantity
             };
         },
+        deleteBasket: () => {
+            basketStore.set({});
+            localStorage.setItem
+        }
     };
 }
 

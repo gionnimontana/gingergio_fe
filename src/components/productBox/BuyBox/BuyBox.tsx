@@ -1,7 +1,6 @@
 import useTranslations from "../../../translations/useTranslations";
 import PriceBox from "../../../components/generalUI/priceBox/PriceBox";
 import { BottleType, useBottleType } from "../../../queries/bottle_type";
-import Spinner from "../../../components/generalUI/spinner/Spinner";
 import ProductRow from "../../../components/productRow/ProductRow";
 import useBasket from "../../../helpers/useBasket";
 import { useWarehouse, getNameAndFormatWarehouse } from "../../../queries/warehouse";

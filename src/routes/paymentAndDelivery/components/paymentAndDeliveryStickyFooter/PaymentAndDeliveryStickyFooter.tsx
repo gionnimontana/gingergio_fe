@@ -6,22 +6,25 @@ import ActionButton from "../../../../components/generalUI/actionButton/ActionBu
 
 interface Props {
     canConfirm: boolean;
+    onConfirm: () => Promise<boolean>;
+    isLoading?: boolean;
 }
 
-const PaymentAndDelivery = ({ canConfirm }: Props) => {
+const PaymentAndDelivery = ({ canConfirm, onConfirm, isLoading }: Props) => {
     const T = useTranslations();
     const navigate = useNavigate()
     const goToBasket = () => {
         navigate(routes.Basket)
     }
-    const goToConfirmOrder = () => {
-        navigate(routes.ConfirmOrder)
+    const goToConfirmOrder = async () => {
+        const success = await onConfirm()
+        if (success) navigate(routes.ConfirmOrder)
     }
 
     return (
         <StickyFooter>
-            <ActionButton label={T('basketStickyFooter_button1')} onClick={goToBasket} contrast={true}/>
-            <ActionButton label={T('confirm')} onClick={goToConfirmOrder} disabled={canConfirm}/>
+            <ActionButton label={T('goToBasket')} onClick={goToBasket} contrast={true}/>
+            <ActionButton label={T('confirm')} onClick={goToConfirmOrder} disabled={!canConfirm} isLoading={isLoading}/>
         </StickyFooter>
     );
 };

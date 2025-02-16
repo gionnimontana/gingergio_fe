@@ -4,4 +4,12 @@
   margin-bottom: 1rem;
 }
 
+.wareHouseWarning {
+  text-align: center;
+  padding: 1rem;
+  box-shadow: var(--defaultBoxShadow);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
 

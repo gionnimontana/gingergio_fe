@@ -249,6 +249,14 @@ export const dictionary = {
         it: 'Note',
         en: 'Note'
     },
+    pickupDate: {
+        it: 'Data di ritiro desiderata',
+        en: 'Pickup date'
+    },
+    deliveryDate: {
+        it: 'Data di consegna desiderata',
+        en: 'Delivery date'
+    },
     empty_basket_text: {
         it: 'Il tuo carrello è vuoto',
         en: 'Your basket is empty'
@@ -317,6 +325,22 @@ export const dictionary = {
         it: '⚠️ Email o password non validi ⚠️',
         en: '⚠️ Invalid email or password ⚠️'
     },
+    nameError: {
+        it: '⚠️ Inserisci il tuo nome ⚠️',
+        en: '⚠️ Enter your name ⚠️'
+    },
+    surnameError: {
+        it: '⚠️ Inserisci il tuo cognome ⚠️',
+        en: '⚠️ Enter your surname ⚠️'
+    },
+    emailError: {
+        it: '⚠️ Inserisci la tua email ⚠️',
+        en: '⚠️ Enter your email ⚠️'
+    },
+    addressError: {
+        it: '⚠️ Inserisci il tuo indirizzo ⚠️',
+        en: '⚠️ Enter your address ⚠️'
+    },
     confirmCode: {
         it: 'Codice di conferma',
         en: 'Confirmation code'
@@ -328,5 +352,21 @@ export const dictionary = {
     genericError: {   
         it: '⚠️ Si è verificato un errore, riprova più tardi ⚠️',
         en: '⚠️ An error occurred, try again later ⚠️'
+    },
+    non_warehouse_products_warning: {
+        it: '⚠️ Alcuni prodotti non sono disponibili in magazzino, la data di ritiro e consegna minima è posticipata di 15 giorni ⚠️',
+        en: '⚠️ Some products are not available in stock, the minimum pickup and delivery date is postponed by 15 days ⚠️'
+    },
+    confirmOrder_section1_title: {
+        it: 'Ordine andato a buon fine',
+        en: 'Order confirmed'
+    },
+    confirmOrder_section1_text: {
+        it: 'Grazie per il tuo ordine! Riceverai una email di conferma con i dettagli dell\'ordine e le istruzioni per il pagamento e la consegna.',
+        en: 'Thank you for your order! You will receive a confirmation email with the order details and payment and delivery instructions.'
+    },
+    confirmOrder_section1a_text: {
+        it: 'Per qualsiasi domanda o informazione, non esitare a contattarmi all\'indirizzo email info@gingergio.it',
+        en: 'For any questions or information, do not hesitate to contact me at the email address info@gingergio.it'
     },
 };

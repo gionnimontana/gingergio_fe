@@ -22,17 +22,17 @@ export const Market = () => {
                 <ProductBox 
                     name='House Pride' 
                     description={[T('house_pride_desc1'), T('house_pride_desc2'), T('house_pride_ingrediens'), T('house_pride_nutritional'), T('fresh_drinks_conservation')]}
-                    productId='housepride'
+                    productId='house-pride'
                 />
                 <ProductBox 
                     name='Zen Cola' 
                     description={[T('zen_cola_desc1'), T('zen_cola_desc2'), T('zen_cola_ingrediens'), T('zen_cola_nutritional'), T('fresh_drinks_conservation')]}
-                    productId='zencola'
+                    productId='zen-cola'
                 />
                 <ProductBox 
                     name='Hojicha' 
                     description={[T('hojicha_desc1'), T('hojicha_desc2'), T('hojicha_ingrediens'), T('hojicha_nutritional'), T('fresh_drinks_conservation')]}
-                    productId='zencola'
+                    productId='hojicha'
                 />
             </div>
         </Page>
