@@ -5,5 +5,6 @@ export const routes = {
     AuthPage: "/auth-page",
     PaymentAndDelivery: "/payment-and-delivery",
     ConfirmOrder: "/confirm-order",
-    User: "/user"
+    User: "/user",
+    NotForSale: "/not-for-sale",
 }

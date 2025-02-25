@@ -7,6 +7,7 @@ import { ConfirmOrder } from "./confirmOrder/ConfirmOrder";
 import { PaymentAndDelivery } from "./paymentAndDelivery/PaymentAndDelivery";
 import { AuthPage } from "./authPage/AuthPage";
 import { User } from "./user/User"
+import NotForSale from "./notForSale/NotForSale";
   
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
   {
     path: routes.User,
     element: <User/>
+  },
+  {
+    path: routes.NotForSale,
+    element: <NotForSale/>,
   },
   {
     path: '*',

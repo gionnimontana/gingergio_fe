@@ -12,6 +12,9 @@
     display: flex;
     justify-content: center;
 }
+.short{
+    width: 5rem;
+}
 .button:hover{
     background: var(--accentDark);
 }

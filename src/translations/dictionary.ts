@@ -369,4 +369,32 @@ export const dictionary = {
         it: 'Per qualsiasi domanda o informazione, non esitare a contattarmi all\'indirizzo email info@gingergio.it',
         en: 'For any questions or information, do not hesitate to contact me at the email address info@gingergio.it'
     },
+    not_for_sale_title: {
+        it: 'Il valore lo decidi tu',
+        en: 'You decide the value'
+    },
+    not_for_sale_text1: {
+        it: 'Mi piacerebbe poter vendere ufficialmente le mie bevande, ma con i volumi di produzione attuali non posso sostenere una partita IVA: le tasse supererebbero di gran lunga i miei possibili guadagni. Per questo motivo, l’unico modo per far arrivare i miei prodotti nelle tue mani è attraverso un’offerta libera.',
+        en: 'I would love to be able to officially sell my drinks, but with the current production volumes I cannot support a VAT number: the taxes would far exceed my possible earnings. For this reason, the only way to get my products into your hands is through a free offer.'
+    },
+    not_for_sale_text2: {
+        it: 'Tieni però presente che, anche se non sono un’azienda registrata, la qualità e la sicurezza rimangono la mia priorità. Ho un attestato HACCP e seguo rigorosamente tutte le procedure di igiene e sicurezza alimentare, proprio come farebbe un qualsiasi produttore certificato.',
+        en: 'However, keep in mind that, even if I am not a registered company, quality and safety remain my priority. I have an HACCP certificate and strictly follow all food hygiene and safety procedures, just as any certified producer would.'
+    },
+    not_for_sale_text3: {
+        it: 'Sostenere piccoli produttori come me significa scegliere trasparenza, artigianalità e passione. Se apprezzi il mio lavoro e vuoi supportarlo, la tua offerta sarà il modo migliore per aiutarmi a continuare a produrre queste bevande fermentate, sane e naturali. 🍃',
+        en: 'Supporting small producers like me means choosing transparency, craftsmanship and passion. If you appreciate my work and want to support it, your offer will be the best way to help me continue to produce these fermented, healthy and natural drinks. 🍃'
+    },
+    not_for_sale_title2: {
+        it: 'Come donare',
+        en: 'How to donate'
+    },
+    not_for_sale_text4: {
+        it: 'Puoi fare un offerta in contanti o sui canali digitali riportati qui sotto, scegliendo l\'importo che ritieni giusto. Ogni gesto di solidarietà è ben accetto e apprezzato, e mi aiuterà a continuare a portare avanti il mio progetto con passione e dedizione.',
+        en: 'You can make a cash offer or on the digital channels listed below, choosing the amount you think is right. Every gesture of solidarity is welcome and appreciated, and will help me continue to carry on my project with passion and dedication.'
+    },
+    not_for_sale_text5: {
+        it: 'Ricorda soprattutto di non buttare le bottiglie vuote: restituendole, potrai contribuire a ridurre gli sprechi oltre ad aiutarmi a recuperare parte dei costi di produzione.',
+        en: 'Above all, remember not to throw away the empty bottles: by returning them, you can help reduce waste as well as help me recover part of the production costs.'
+    }
 };
