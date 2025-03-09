@@ -60,7 +60,7 @@ const useBasket = () => {
         },
         deleteBasket: () => {
             basketStore.set({});
-            localStorage.setItem
+            localStorage.removeItem(basketKey);
         }
     };
 }

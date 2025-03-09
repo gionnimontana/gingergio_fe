@@ -18,17 +18,26 @@ export const confirmOrder = async (options: OrderOptions, user: UserStore | unde
     if (!options.name) throw 'nameError';
     if (!options.surname) throw 'surnameError';
     if (options.delivery === 'remote' && !options.address) throw 'addressError';
+    if (options.delivery === 'onsite' && !options.pickupDate) throw 'dateError';
     let success = false;
     try {
         const date = options.delivery === 'onsite' ? options.pickupDate : options.deliveryDate;
+        const content = Object.keys(basket).reduce((acc: {[key: string]: number}, key: string) => {
+            acc[key] = basket[key].quantity;
+            return acc;
+        }, {});
 
         const data: any = {
             "user": user.model.id,
             "name": options.name,
             "surname": options.surname,
-            "payed": false,
+            "basket": content,
+            "confirmed": false,
             "delivered": false,
-        };
+            "updates": null,
+            "type": options.delivery,
+        }
+        
         if (options.delivery === 'remote') {
             data['address'] = options.address;
         }

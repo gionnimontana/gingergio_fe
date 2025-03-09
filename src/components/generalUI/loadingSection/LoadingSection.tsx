@@ -3,7 +3,7 @@ import s from './LoadingSection.module.css';
 
 interface Props {
     isLoading: boolean;
-    isError: boolean;
+    isError?: boolean;
     children: React.ReactNode;
     className?: string;
 }

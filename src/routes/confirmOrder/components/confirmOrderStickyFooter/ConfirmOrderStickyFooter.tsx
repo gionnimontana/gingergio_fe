@@ -3,7 +3,6 @@ import { routes } from "../../../../constants/routes";
 import useTranslations from "../../../../translations/useTranslations";
 import StickyFooter from "../../../../components/generalUI/stickyFooter/StickyFooter";
 import ActionButton from "../../../../components/generalUI/actionButton/ActionButton";
-import s from "./BasketStickyFooter.module.css";
 
 const ConfirmOrderStickyFooter = () => {
     const T = useTranslations();
@@ -14,7 +13,7 @@ const ConfirmOrderStickyFooter = () => {
 
     return (
         <StickyFooter>
-            <ActionButton label={T('basketStickyFooter_button1')} onClick={goToMarket}/>
+            <ActionButton label={T('goToShop')} onClick={goToMarket}/>
         </StickyFooter>
     );
 };

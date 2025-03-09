@@ -16,7 +16,24 @@ export interface UserStore {
     token: string | undefined; 
 }
 
-const useUser = () => {
+export interface UserUpdateInfo {
+    name: string;
+    surname: string;
+    address: string;
+}
+
+export interface UseUser {
+    user: UserStore | undefined;
+    login: (email: string, password: string) => Promise<boolean>;
+    subscribe: (email: string, password: string) => Promise<boolean>;
+    noAuthLogin: () => Promise<boolean>;
+    logout: () => void;
+    message: string | undefined;
+    isLoading: boolean;
+    updateInfo: (data: UserUpdateInfo) => Promise<boolean>;
+}
+
+const useUser = (): UseUser => {
     const [user, setUser] = useState<UserStore | undefined>(userStore.get());
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [message, setmessage] = useState<string | undefined>();
@@ -35,7 +52,9 @@ const useUser = () => {
     useEffect(() => {
         if (!user || !user.model?.id) return;
         pb.collection('users').subscribe(user?.model?.id, (e: any) => {
-            userStore.set({ ...user, model: e.record });
+            const updatedUser = { ...user, model: e.record };
+            userStore.set(updatedUser);
+            localStorage.setItem(userStorageKey, JSON.stringify(updatedUser));
         });
         return () => {
             pb.collection('users').unsubscribe();
@@ -67,6 +86,36 @@ const useUser = () => {
                 setmessage(T('loginErrorMsg'));
                 setIsLoading(false);
             } finally {
+                return success;
+            }
+        },
+        updateInfo: async ({
+            name,
+            surname,
+            address
+        }: UserUpdateInfo): Promise<boolean> => {
+            setmessage(undefined);
+            setIsLoading(true);
+            let success = false;
+            try {
+                if (!user?.model?.id) {
+                    throw new Error('No user found');
+                }
+                const res: any = await pb.collection('users').update(user.model.id, {
+                    name,
+                    surname,
+                    address
+                });
+                if (res.id) {
+                    userStore.set({ ...user, model: res });
+                    success = true;
+                } else {
+                    setmessage(T('genericError'));
+                }
+            } catch (e) {
+                setmessage(T('genericError'));
+            } finally {
+                setIsLoading(false);
                 return success;
             }
         },

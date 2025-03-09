@@ -1,0 +1,13 @@
+.form {
+    width: 85vw;
+    max-width: 30rem;
+    margin-bottom: 1rem;
+  }
+
+  .formContainer {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }

@@ -6,15 +6,6 @@
     margin: 1rem 0rem;
 }
 
-.basketItem {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    margin: 1rem 0rem;
-}
-
 .nonWarehouseDisclaimer {
     text-align: center;
     padding: 1rem;
@@ -28,6 +19,10 @@
 
 .emptyDisclaimer {
     text-align: center;
+}
+
+.deleteBasketButton {
+    margin-top: 2rem;
 }
 
 @media (max-width: 800px) {

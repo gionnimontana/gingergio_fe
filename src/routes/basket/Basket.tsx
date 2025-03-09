@@ -7,11 +7,12 @@ import ProductRow from '../../components/productRow/ProductRow';
 import PriceBox from '../../components/generalUI/priceBox/PriceBox';
 import LoadingSection from '../../components/generalUI/loadingSection/LoadingSection';
 import { useWarehouse, checkIfNonWarehouseProducts, getNameAndFormatWarehouse } from '../../queries/warehouse';
+import ActionButton from '../../components/generalUI/actionButton/ActionButton';
 import s from './Basket.module.css';
 
 export const Basket = () => {
 
-    const { noEmptyList, update, getItemQuantity, isEmpty, getTotalCashback, getTotalPrice } = useBasket()
+    const { noEmptyList, update, getItemQuantity, isEmpty, getTotalCashback, getTotalPrice, deleteBasket } = useBasket()
     const { data, isLoading, isError } = useWarehouse()
     const T = useTranslations()
 
@@ -51,6 +52,7 @@ export const Basket = () => {
                                 totalPrice={getTotalPrice()} 
                                 totalCashback={getTotalCashback()}
                             />
+                            <ActionButton className={s.deleteBasketButton} label={T('empty_basket')} onClick={deleteBasket} contrast={true}/>
                         </>
 
                     )}

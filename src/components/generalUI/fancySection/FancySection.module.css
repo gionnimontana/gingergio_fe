@@ -14,6 +14,10 @@
     flex-direction: column;
     align-items: center;
 }
+
+.contentContainer {
+    width: 100%;
+}
   
 .image {
     width: 90%;

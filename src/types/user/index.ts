@@ -6,8 +6,10 @@ export interface User {
     email: string
     emailVisibility: boolean
     id: string
-    name: string
     updated: string
     verified: boolean
     anonymous: boolean
+    name: string
+    surname: string
+    address: string
 }

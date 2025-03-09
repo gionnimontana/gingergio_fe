@@ -29,7 +29,7 @@ const FancySection = ({ header, content, img, className, keyWords }: Props) => {
             <img className={imageClass} src={img.src} alt={img.alt}/>
           ) : null}
           {content ? (
-            <div>
+            <div className={s.contentContainer}>
               {contentIsArray ? 
                 content.map((item, index) => (
                 <HighlightKeyword className={s.content} text={item} key={index} keywords={keyWords}/>

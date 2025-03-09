@@ -68,10 +68,11 @@ export const PaymentAndDelivery = () => {
             <RadioContainer>
                 <RadioGroup 
                     expanded={delivery === 'onsite'} 
-                    label={T('paymentAndDelivery_radio1')} 
+                    label={T('onsite')} 
                     onChange={onTabChange('onsite')}
                     message={warning}
                 >
+                    <div className={s.onSiteDisclaimer}>{T('on_site_disclaimer')}</div>
                     <FormComponent className={s.form} text={name} setText={setName} label={T('name')}/>
                     <FormComponent className={s.form} text={surname} setText={setSurname} label={T('surname')}/>
                     <DatePicker className={s.form} onChange={setPickupDate} label={T('pickupDate')} delayed={areNonWarehouseProducts}/>
@@ -79,7 +80,7 @@ export const PaymentAndDelivery = () => {
                 </RadioGroup>
                 <RadioGroup 
                     expanded={delivery === 'remote'} 
-                    label={T('paymentAndDelivery_radio2')} 
+                    label={T('remote')} 
                     onChange={onTabChange('remote')}
                     message={warning}
                 >

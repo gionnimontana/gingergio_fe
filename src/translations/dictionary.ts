@@ -5,6 +5,10 @@ export const dictionary = {
         en: 'Ginger Gio',
         it: undefined
     },
+    anonymous_user: {
+        en: 'Anonymous user',
+        it: 'Utente anonimo'
+    },
     subtitle: {
         en: 'Probiotics beverages',
         it: 'Bevande probiotiche'
@@ -117,9 +121,13 @@ export const dictionary = {
         it: `Non mi interessa collezionare dati personali che non siano strettamente necessari alla gestione degli ordini. Ti chiedo un contatto per eventuali aggiornamenti sulla consegna e per l'assegnazione del cashback, ma la scelta è tua. Se preferisci, puoi ordinare senza autenticarti: inserirai solo le informazioni essenziali, che verranno cancellate subito dopo la consegna.`,
         en: `I am not interested in collecting personal data that is not strictly necessary for order management. I ask you for a contact for any updates on delivery and for the assignment of cashback, but the choice is yours. If you prefer, you can order without authenticating: you will only enter the essential information, which will be deleted immediately after delivery.`
     },
-    basketStickyFooter_button1: {
-        en: 'Back to products',
-        it: 'Torna ai prodotti'
+    goToShop: {
+        en: 'Go to shop',
+        it: 'Vai al negozio'
+    },
+    checkout: {
+        en: 'Checkout',
+        it: 'Checkout'
     },
     confirm: {
         en: 'Confirm',
@@ -254,7 +262,7 @@ export const dictionary = {
         en: 'Pickup date'
     },
     deliveryDate: {
-        it: 'Data di consegna desiderata',
+        it: 'Data di consegna',
         en: 'Delivery date'
     },
     empty_basket_text: {
@@ -289,6 +297,10 @@ export const dictionary = {
         it: 'Utente',
         en: 'User'
     },
+    on_site_disclaimer: {
+        it: 'Scegliendo questa opzione potrai ritirare il tuo ordine presso il mio laboratorio di Cermenate (CO) oppure se mi conosci di persona puoi specificare nel campo note un luogo di ritiro alternativo',
+        en: 'By choosing this option you can pick up your order at my laboratory in Cermenate (CO) or if you know me in person you can specify an alternative pickup location in the notes field'
+    },
     password: {
         it: 'Password',
         en: 'Password'
@@ -305,21 +317,61 @@ export const dictionary = {
         it: 'Nascondi password',
         en: 'Hide password'
     },
-    paymentAndDelivery_radio1: {
+    orderDate: {
+        it: 'Data dell\'ordine',
+        en: 'Order date'
+    },
+    orderContent: {
+        it: 'Contenuto dell\'ordine',
+        en: 'Order content'
+    },
+    onsite: {
         it: 'Ritiro a mano',
         en: 'Hand delivery'
     },
-    paymentAndDelivery_radio2: {
+    remote: {
         it: 'Consegna a domicilio',
         en: 'Home delivery'
     },
     userPage_header: {
+        it: 'Benvenuto',
+        en: 'Welcome'
+    },
+    userPage_orders: {
+        it: 'I tuoi ordini',
+        en: 'Your orders'
+    },
+    userPage_profile: {
         it: 'Il tuo profilo',
         en: 'Your profile'
     },
-    userPage_content: {
-        it: 'Qui puoi vedere e gestire i tuoi ordini e le informazioni del tuo profilo',
-        en: 'Here you can see your past orders and your profile information'
+    confirmed: {
+        it: 'Confermato',
+        en: 'Confirmed'
+    },
+    orderType: {
+        it: 'Tipo di ordine',
+        en: 'Order type'
+    },
+    no_current_orders_message: {
+        it: 'Non hai ordini attivi',
+        en: 'You have no active orders'
+    },
+    empty_basket: {
+        it: 'Svuota carrello',
+        en: 'Empty basket'
+    },
+    userPage_content1: {
+        it: 'Qui puoi vedere e gestire i tuoi ordini e le informazioni del tuo profilo. Tutte le informazioni contenute in questa pagina verranno usate esclusivamente per facilitare la gestione degli ordini e non verranno mai condivise con terzi.',
+        en: 'Here you can see your past orders and your profile information. All the information contained in this page will be used exclusively to facilitate order management and will never be shared with third parties.'
+    },
+    userPage_content2: {
+        it: 'Se hai domande o dubbi, non esitare a contattarmi all\'indirizzo email info@gingergio.it',
+        en: 'If you have any questions or doubts, do not hesitate to contact me at the email address info@gingergio.it'
+    },
+    updateUserInfo: {
+        it: 'Aggiorna informazioni',
+        en: 'Update information'
     },
     loginErrorMsg: {
         it: '⚠️ Email o password non validi ⚠️',
@@ -341,6 +393,14 @@ export const dictionary = {
         it: '⚠️ Inserisci il tuo indirizzo ⚠️',
         en: '⚠️ Enter your address ⚠️'
     },
+    anonymousUserProfileDisclaimer: {
+        it: 'Stai navigando il sito come utente anonimo, tutte le informazioni relative al tuo ordine sono visibili solo accedendo a questo sito tramite questo dispositivo e verranno cancellate dopo la consegna.',
+        en: 'You are browsing the site as an anonymous user, all information related to your order is visible only by accessing this site through this device and will be deleted after delivery.'
+    },
+    dateError: {
+        it: '⚠️ Inserisci una data valida ⚠️',
+        en: '⚠️ Enter a valid date ⚠️'
+    },
     confirmCode: {
         it: 'Codice di conferma',
         en: 'Confirmation code'
@@ -358,12 +418,16 @@ export const dictionary = {
         en: '⚠️ Some products are not available in stock, the minimum pickup and delivery date is postponed by 15 days ⚠️'
     },
     confirmOrder_section1_title: {
-        it: 'Ordine andato a buon fine',
-        en: 'Order confirmed'
+        it: 'Ordine correttamente inserito',
+        en: 'Order successfully inserted'
     },
-    confirmOrder_section1_text: {
-        it: 'Grazie per il tuo ordine! Riceverai una email di conferma con i dettagli dell\'ordine e le istruzioni per il pagamento e la consegna.',
-        en: 'Thank you for your order! You will receive a confirmation email with the order details and payment and delivery instructions.'
+    confirmOrder_section1base_text: {
+        it: 'Grazie per la tua richiesta di ordine! Il prossimo passo ora è attendere la conferma dell\'ordine che riceverai via email, con le istruzioni per il pagamento e la consegna.',
+        en: 'Thank you for your order request! The next step now is to wait for the order confirmation that you will receive via email, with instructions for payment and delivery.'
+    },
+    confirmOrder_section1anonymous_text: {
+        it: 'Grazie per la tua richiesta di ordine! Siccome hai scelto di procedere senza autenticarti, il solo modo per verificare lo stato del tuo ordine è accedere a questo sito tramite lo stesso dispositivo e browser con cui hai effettuato l\'ordine.',
+        en: 'Thank you for your order request! Since you have chosen to proceed without authenticating, the only way to check the status of your order is to access this site through the same device and browser with which you placed the order.'
     },
     confirmOrder_section1a_text: {
         it: 'Per qualsiasi domanda o informazione, non esitare a contattarmi all\'indirizzo email info@gingergio.it',

@@ -19,8 +19,8 @@ const BasketStickyFooter = () => {
 
     return (
         <StickyFooter>
-            <ActionButton label={T('basketStickyFooter_button1')} onClick={goToMarket} contrast={true}/>
-            <ActionButton label={T('confirm')} onClick={goToAuthPage} disabled={isEmpty()}/>
+            <ActionButton label={T('goToShop')} onClick={goToMarket} contrast={true}/>
+            <ActionButton label={T('checkout')} onClick={goToAuthPage} disabled={isEmpty()}/>
         </StickyFooter>
     );
 };
