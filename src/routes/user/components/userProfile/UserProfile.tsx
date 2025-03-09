@@ -23,16 +23,18 @@ const UserProfile = ({ useUser }: Props) => {
                 {user?.model.anonymous ? (
                     T('anonymousUserProfileDisclaimer')
                 ) : (
-                    <div className={s.formContainer}>
-                        <FormComponent className={s.form} text={name} setText={setName} label={T('name')}/>
-                        <FormComponent className={s.form} text={surname} setText={setSurname} label={T('surname')}/>
-                        <FormComponent className={s.form} text={address} setText={setAddress} label={T('address')}/>
-                    </div>
+                    <>
+                        <div className={s.formContainer}>
+                            <FormComponent className={s.form} text={name} setText={setName} label={T('name')}/>
+                            <FormComponent className={s.form} text={surname} setText={setSurname} label={T('surname')}/>
+                            <FormComponent className={s.form} text={address} setText={setAddress} label={T('address')}/>
+                        </div>
+                        <ActionButton 
+                            label={T('updateUserInfo')} 
+                            onClick={() => updateInfo({ name, surname, address })} 
+                        />
+                    </>
                 )}
-                <ActionButton 
-                    label={T('updateUserInfo')} 
-                    onClick={() => updateInfo({ name, surname, address })} 
-                />
             </LoadingSection>
         </>
     );
