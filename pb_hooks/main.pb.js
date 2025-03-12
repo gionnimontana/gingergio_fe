@@ -1,5 +1,5 @@
 onRecordAfterCreateSuccess((e) => {
-    console.log("New record created", e)
+    console.log("New record created", JSON.stringify(e))
     // const isAnonymous = e.record.anonymous
     // const sender = isAnonymous ? "Anonymous" : e.record.email()
     // const message = new MailerMessage({
