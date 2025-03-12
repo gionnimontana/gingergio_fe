@@ -5,8 +5,10 @@ onRecordAfterCreateSuccess((e) => {
         console.log('pure e', e)
         console.log('e.record', e.record)
         console.log('parsed e.record', JSON.stringify(e.record))
+        const recordString = JSON.stringify(e.record)
+        const recordParsed = JSON.parse(recordString)
+        console.log('recordParsed', recordParsed.basket)
         console.log('e.record.basket', e.record.basket)
-        console.log('parsed e.record.basket', JSON.parse(e.record.basket))
         const sender = e.record.name + " " + e.record.surname
         const basket = JSON.stringify(e.record.basket)
         const message = new MailerMessage({
