@@ -1,6 +1,5 @@
 .form {
-  width: 85vw;
-  max-width: 30rem;
+  width: calc(100% - 0.5rem);
   margin-bottom: 1rem;
 }
 

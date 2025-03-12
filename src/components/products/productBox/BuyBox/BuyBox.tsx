@@ -1,11 +1,11 @@
-import useTranslations from "../../../translations/useTranslations";
-import PriceBox from "../../../components/generalUI/priceBox/PriceBox";
-import { BottleType, useBottleType } from "../../../queries/bottle_type";
-import ProductRow from "../../../components/productRow/ProductRow";
-import useBasket from "../../../helpers/useBasket";
-import { useWarehouse, getNameAndFormatWarehouse } from "../../../queries/warehouse";
+import useTranslations from "translations/useTranslations";
+import PriceBox from "components/generalUI/priceBox/PriceBox";
+import { BottleType, useBottleType } from "queries/bottle_type";
+import ProductRow from "components/products/productBox/productRow/ProductRow";
+import useBasket from "helpers/useBasket";
+import { useWarehouse, getNameAndFormatWarehouse } from "queries/warehouse";
 import s from './BuyBox.module.css';
-import LoadingSection from "../../../components/generalUI/loadingSection/LoadingSection";
+import LoadingSection from "components/generalUI/loadingSection/LoadingSection";
 
 interface Props {
     productId: string;

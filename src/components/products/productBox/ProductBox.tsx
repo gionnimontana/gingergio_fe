@@ -1,10 +1,10 @@
-import useTranslations from '../../translations/useTranslations';
-import ActionButton from '../../components/generalUI/actionButton/ActionButton';
-import FancySection from '../../components/generalUI/fancySection/FancySection';
+import useTranslations from 'translations/useTranslations';
+import ActionButton from 'components/generalUI/actionButton/ActionButton';
+import FancySection from 'components/generalUI/fancySection/FancySection';
 import BuyBox from './BuyBox/BuyBox';
 import s from './ProductBox.module.css';
 import { useState } from 'react';
-import HighlightKeyword from '../../components/generalUI/highlightKeyword/HighlightKeyword';
+import HighlightKeyword from 'components/generalUI/highlightKeyword/HighlightKeyword';
 
 interface Props {
     name: string;

@@ -1,10 +1,9 @@
 import useTranslations from '../../translations/useTranslations';
-import useBasket from '../../helpers/useBasket';
 import Page from '../../components/page/Page';
 import FancySection from '../../components/generalUI/fancySection/FancySection';
 import MarketStickyFooter from './components/marketStickyFooter/MarketStickyFooter';
 import s from './Market.module.css';
-import ProductBox from '../../components/productBox/ProductBox';
+import ProductBox from 'components/products/productBox/ProductBox';
 
 export const Market = () => {
 

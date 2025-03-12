@@ -31,6 +31,8 @@ export interface UseUser {
     message: string | undefined;
     isLoading: boolean;
     updateInfo: (data: UserUpdateInfo) => Promise<boolean>;
+    isLogged: () => boolean;
+    isAnonymous: () => boolean;
 }
 
 const useUser = (): UseUser => {
@@ -186,6 +188,12 @@ const useUser = (): UseUser => {
         logout: () => {
             userStore.set(undefined);
             localStorage.removeItem(userStorageKey);
+        },
+        isLogged: () => {
+            return Boolean(user?.model?.id);
+        },
+        isAnonymous: () => {
+            return Boolean(user?.model?.anonymous);
         },
         message,
         isLoading,

@@ -1,6 +1,6 @@
-import { NumberField } from "../../components/generalUI/numberField/NumberField";
-import useTranslations from "../../translations/useTranslations";
-import CurrencyFormatter from "../../components/generalUI/currencyFormatter/CurrencyFormatter";
+import { NumberField } from "components/generalUI/numberField/NumberField";
+import useTranslations from "translations/useTranslations";
+import CurrencyFormatter from "components/generalUI/currencyFormatter/CurrencyFormatter";
 import s from './ProductRow.module.css';
 
 interface Props {

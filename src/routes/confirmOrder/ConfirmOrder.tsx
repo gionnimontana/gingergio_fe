@@ -15,6 +15,7 @@ export const ConfirmOrder = () => {
 
     return (
         <Page
+            redirectUnlogged={true}
             outsideChilds={<ConfirmOrderStickyFooter/>}
         >
             <FancySection 

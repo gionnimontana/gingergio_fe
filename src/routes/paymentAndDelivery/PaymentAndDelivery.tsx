@@ -16,7 +16,7 @@ import useUser from '../../helpers/useUser/useUser';
 export const PaymentAndDelivery = () => {
     const { data } = useWarehouse()
     const { noEmptyList, basket, deleteBasket } = useBasket()
-    const { user } = useUser()
+    const { user, isAnonymous } = useUser()
     const T = useTranslations()
 
     const [warning, setWarning] = useState<string>('')
@@ -77,6 +77,7 @@ export const PaymentAndDelivery = () => {
                     <FormComponent className={s.form} text={surname} setText={setSurname} label={T('surname')}/>
                     <DatePicker className={s.form} onChange={setPickupDate} label={T('pickupDate')} delayed={areNonWarehouseProducts}/>
                     <FormComponent className={s.form} text={note} setText={setNote} label={T('note')} textarea={true}/>
+                    {isAnonymous() ? <div>{T('anonymous_user_delivery_note_disclaimer')}</div> : null}
                 </RadioGroup>
                 <RadioGroup 
                     expanded={delivery === 'remote'} 
@@ -89,6 +90,7 @@ export const PaymentAndDelivery = () => {
                     <FormComponent className={s.form} text={address} setText={setAddress} label={T('address')}/>
                     <DatePicker className={s.form} onChange={setDeliveryDate} label={T('deliveryDate')} delayed={areNonWarehouseProducts}/>
                     <FormComponent className={s.form} text={note} setText={setNote} label={T('note')} textarea={true}/>
+                    {isAnonymous() ? <div>{T('anonymous_user_delivery_note_disclaimer')}</div> : null}
                 </RadioGroup>
             </RadioContainer>
         </Page>

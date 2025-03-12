@@ -1,13 +1,13 @@
-import useBasket from '../../helpers/useBasket';
-import Page from '../../components/page/Page';
-import FancySection from '../../components/generalUI/fancySection/FancySection';
-import useTranslations from '../../translations/useTranslations';
+import useBasket from 'helpers/useBasket';
+import Page from 'components/page/Page';
+import FancySection from 'components/generalUI/fancySection/FancySection';
+import useTranslations from 'translations/useTranslations';
 import BasketStickyFooter from './components/basketStickyFooter/BasketStickyFooter';
-import ProductRow from '../../components/productRow/ProductRow';
-import PriceBox from '../../components/generalUI/priceBox/PriceBox';
-import LoadingSection from '../../components/generalUI/loadingSection/LoadingSection';
+import ProductRow from 'components/products/productBox/productRow/ProductRow';
+import PriceBox from 'components/generalUI/priceBox/PriceBox';
+import LoadingSection from 'components/generalUI/loadingSection/LoadingSection';
 import { useWarehouse, checkIfNonWarehouseProducts, getNameAndFormatWarehouse } from '../../queries/warehouse';
-import ActionButton from '../../components/generalUI/actionButton/ActionButton';
+import ActionButton from 'components/generalUI/actionButton/ActionButton';
 import s from './Basket.module.css';
 
 export const Basket = () => {

@@ -460,5 +460,9 @@ export const dictionary = {
     not_for_sale_text5: {
         it: 'Ricorda soprattutto di non buttare le bottiglie vuote: restituendole, potrai contribuire a ridurre gli sprechi oltre ad aiutarmi a recuperare parte dei costi di produzione.',
         en: 'Above all, remember not to throw away the empty bottles: by returning them, you can help reduce waste as well as help me recover part of the production costs.'
+    },
+    anonymous_user_delivery_note_disclaimer: {
+        it: '⚠️ Sei entrato come utente anonimo, usa il campo note per inserire più informazioni possibili per la consegna',
+        en: '⚠️ You are logged as an anonymous user, use the notes field to enter as much information as possible for delivery'
     }
 };

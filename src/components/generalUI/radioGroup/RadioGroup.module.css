@@ -8,7 +8,8 @@
     box-shadow: var(--defaultBoxShadow);
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    max-width: 96vw;
+    width: 100%;
+    max-width: min(100%, 40em);
   }
   
   .radioGroup {
