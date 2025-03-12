@@ -3,9 +3,7 @@
 onRecordAfterCreateSuccess((e) => {
     try {
         console.log('pure e', e)
-        console.log('parsed e', JSON.parse(e))
         console.log('e.record', e.record)
-        console.log('parsed e.record', JSON.stringify(e.record))
         console.log('e.record.basket', e.record.basket)
         console.log('parsed e.record.basket', JSON.stringify(e.record.basket))
         const sender = e.record.name + " " + e.record.surname
