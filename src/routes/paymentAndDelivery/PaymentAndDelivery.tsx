@@ -9,7 +9,7 @@ import { FormComponent } from '../../components/generalUI/form/FormComponent';
 import { RadioContainer } from '../../components/generalUI/radioGroup/RadioContainer';
 import { RadioGroup } from '../../components/generalUI/radioGroup/RadioGroup';
 import { DatePicker } from '../../components/generalUI/form/DatePicker';
-import { confirmOrder } from '../../api/orders/apiOrders';
+import { confirmOrder, OrderOptions } from '../../api/orders/apiOrders';
 import s from './PaymentAndDelivery.module.css';
 import useUser from '../../helpers/useUser/useUser';
 
@@ -22,12 +22,11 @@ export const PaymentAndDelivery = () => {
     const [warning, setWarning] = useState<string>('')
     const [isLoading, setLoading] = useState<boolean>(false)
     const [delivery, setDelivery] = useState<'onsite'|'remote'>()
-    const [name, setName] = useState<string>('')
-    const [surname, setSurname] = useState<string>('')
-    const [address, setAddress] = useState<string>('')
+    const [name, setName] = useState<string>(user?.model.name || '')
+    const [surname, setSurname] = useState<string>(user?.model.surname || '')
+    const [address, setAddress] = useState<string>(user?.model.address || '')
     const [note, setNote] = useState<string>('')
-    const [deliveryDate, setDeliveryDate] = useState<Date>()
-    const [pickupDate, setPickupDate] = useState<Date>()
+    const [desired_delivery, setDate] = useState<Date>()
 
     const areNonWarehouseProducts = checkIfNonWarehouseProducts(data, noEmptyList)
     const wareHouseWarning = areNonWarehouseProducts ? T('non_warehouse_products_warning') : ''
@@ -42,7 +41,7 @@ export const PaymentAndDelivery = () => {
         setLoading(true)
         let success = false
         try {
-            const payload = { delivery, name, surname, address, note, deliveryDate, pickupDate }
+            const payload: OrderOptions = { delivery, name, surname, address, note, desired_delivery }
             const confirmed = await confirmOrder(payload, user, basket)
             if (confirmed) {
                 deleteBasket()
@@ -75,7 +74,7 @@ export const PaymentAndDelivery = () => {
                     <div className={s.onSiteDisclaimer}>{T('on_site_disclaimer')}</div>
                     <FormComponent className={s.form} text={name} setText={setName} label={T('name')}/>
                     <FormComponent className={s.form} text={surname} setText={setSurname} label={T('surname')}/>
-                    <DatePicker className={s.form} onChange={setPickupDate} label={T('pickupDate')} delayed={areNonWarehouseProducts}/>
+                    <DatePicker className={s.form} onChange={setDate} label={T('pickupDate')} delayed={areNonWarehouseProducts}/>
                     <FormComponent className={s.form} text={note} setText={setNote} label={T('note')} textarea={true}/>
                     {isAnonymous() ? <div>{T('anonymous_user_delivery_note_disclaimer')}</div> : null}
                 </RadioGroup>
@@ -88,7 +87,7 @@ export const PaymentAndDelivery = () => {
                     <FormComponent className={s.form} text={name} setText={setName} label={T('name')}/>
                     <FormComponent className={s.form} text={surname} setText={setSurname} label={T('surname')}/>
                     <FormComponent className={s.form} text={address} setText={setAddress} label={T('address')}/>
-                    <DatePicker className={s.form} onChange={setDeliveryDate} label={T('deliveryDate')} delayed={areNonWarehouseProducts}/>
+                    <DatePicker className={s.form} onChange={setDate} label={T('deliveryDate')} delayed={areNonWarehouseProducts}/>
                     <FormComponent className={s.form} text={note} setText={setNote} label={T('note')} textarea={true}/>
                     {isAnonymous() ? <div>{T('anonymous_user_delivery_note_disclaimer')}</div> : null}
                 </RadioGroup>

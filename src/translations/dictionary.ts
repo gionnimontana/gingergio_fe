@@ -198,8 +198,8 @@ export const dictionary = {
         en: 'Ingredients: Hojicha tea infusion, ginger bug, sugar.'
     },
     hojicha_nutritional: {
-        it: 'Valori nutrizionali per 100ml: Energia 15 kcal, Grassi 0g, Carboidrati 3.5g, di cui zuccheri 3.5g, Proteine 0g, Sale 0g.',
-        en: 'Nutritional values per 100ml: Energy 15 kcal, Fat 0g, Carbohydrates 3.5g, of which sugars 3.5g, Proteins 0g, Salt 0g.'
+        it: 'Valori nutrizionali per 100ml: Energia 14 kcal, Grassi 0g, Carboidrati 3.5g, di cui zuccheri 3.5g, Proteine 0g, Sale 0g.',
+        en: 'Nutritional values per 100ml: Energy 14 kcal, Fat 0g, Carbohydrates 3.5g, of which sugars 3.5g, Proteins 0g, Salt 0g.'
     },
     productbox_mainbutton: {
         it: 'Opzioni di acquisto',
@@ -426,8 +426,8 @@ export const dictionary = {
         en: 'Thank you for your order request! The next step now is to wait for the order confirmation that you will receive via email, with instructions for payment and delivery.'
     },
     confirmOrder_section1anonymous_text: {
-        it: 'Grazie per la tua richiesta di ordine! Siccome hai scelto di procedere senza autenticarti, il solo modo per verificare lo stato del tuo ordine è accedere a questo sito tramite lo stesso dispositivo e browser con cui hai effettuato l\'ordine.',
-        en: 'Thank you for your order request! Since you have chosen to proceed without authenticating, the only way to check the status of your order is to access this site through the same device and browser with which you placed the order.'
+        it: 'Grazie per la tua richiesta di ordine! Siccome hai scelto di procedere senza autenticarti, il solo modo per verificare lo stato del tuo ordine è accedere a questo sito tramite lo stesso dispositivo e browser con cui hai effettuato l\'ordine e visitare la sezione ㋡ in alto a destra.',
+        en: 'Thank you for your order request! Since you have chosen to proceed without authenticating, the only way to check the status of your order is to access this site through the same device and browser with which you placed the order and visit the ㋡ section at the top right.'
     },
     confirmOrder_section1a_text: {
         it: 'Per qualsiasi domanda o informazione, non esitare a contattarmi all\'indirizzo email info@gingergio.it',
@@ -464,5 +464,9 @@ export const dictionary = {
     anonymous_user_delivery_note_disclaimer: {
         it: '⚠️ Sei entrato come utente anonimo, usa il campo note per inserire più informazioni possibili per la consegna',
         en: '⚠️ You are logged as an anonymous user, use the notes field to enter as much information as possible for delivery'
-    }
+    },
+    updates: {
+        it: '⚠️ Aggiornamenti ⚠️',
+        en: '⚠️ Updates ⚠️'
+    },
 };

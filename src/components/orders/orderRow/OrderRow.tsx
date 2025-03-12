@@ -8,7 +8,7 @@ interface Props {
 }
 
 const OrderRow = ({ order }: Props) => {
-    const { confirmed, type, basket, name, surname, address, notes, desired_delivery, delivered, updates, created } = order;
+    const { confirmed, type, basket, desired_delivery, updates, created } = order;
     const T = useTranslations();
 
     const orderDateRaw = new Date(created);
@@ -18,6 +18,12 @@ const OrderRow = ({ order }: Props) => {
 
     return (
         <>
+            {updates ? (
+                <div className={s.updates}>
+                    <div className={s.header}>{T('updates')}</div>
+                    <div className={s.updateSpace}>{updates}</div> 
+                </div>
+            ) : null}
             <div className={s.optionRow}>
                 <div>
                     <div className={s.header}>{T('orderDate')}</div>
