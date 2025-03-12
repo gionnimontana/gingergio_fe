@@ -2,16 +2,10 @@
 
 onRecordAfterCreateSuccess((e) => {
     try {
-        console.log('pure e', e)
-        console.log('e.record', e.record)
-        console.log('parsed e.record', JSON.stringify(e.record))
         const recordString = JSON.stringify(e.record)
         const recordParsed = JSON.parse(recordString)
-        console.log('recordParsed', recordParsed.basket)
         const sender = recordParsed.name + " " + recordParsed.surname
-        console.log('sender', sender)
         const basket = JSON.stringify(recordParsed.basket)
-        console.log('basket', basket)
         const message = new MailerMessage({
             from: {
                 address: 'info@gingergio.it',
