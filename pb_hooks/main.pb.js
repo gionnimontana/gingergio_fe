@@ -5,6 +5,7 @@ onRecordAfterCreateSuccess((e) => {
         const sender = e.record.name + " " + e.record.surname
         const basket = JSON.stringify(e.record.basket)
         const message = new MailerMessage({
+            from: 'info@gingergio.it',
             to:      ['gionnimontana@gmail.com', 'gingergiobeverage@gmail.com'],
             subject: "Nuovo Ordine da " + sender,
             html: basket,
