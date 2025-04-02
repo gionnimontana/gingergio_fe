@@ -78,8 +78,8 @@ export const dictionary = {
         en: 'Better nutrient absorption: More bioavailable minerals: Fermentation can make some minerals, such as iron, magnesium and zinc, more easily absorbed by the body. Vitamin production: Some lactic bacteria produce B vitamins during fermentation.'
     },
     home_section4e_text: {
-        it: 'Riduzione dell’infiammazione: Studi hanno dimostrato che i probiotici possono ridurre marcatori infiammatori nel corpo, contribuendo a migliorare condizioni infiammatorie croniche come la sindrome dell\'intestino irritabile (IBS) o altre malattie gastrointestinali.',
-        en: 'Reduction of inflammation: Studies have shown that probiotics can reduce inflammatory markers in the body, helping to improve chronic inflammatory conditions such as irritable bowel syndrome (IBS) or other gastrointestinal diseases.'
+        it: 'Riduzione dell’infiammazione: I probiotici possono ridurre marcatori infiammatori nel corpo, contribuendo a migliorare condizioni infiammatorie croniche come la sindrome dell\'intestino irritabile (IBS) o altre malattie gastrointestinali.',
+        en: 'Reduction of inflammation: Probiotics can reduce inflammatory markers in the body, helping to improve chronic inflammatory conditions such as irritable bowel syndrome (IBS) or other gastrointestinal diseases.'
     },
     home_section4f_text: {
         it: 'Effetto antiossidante: I composti prodotti durante la fermentazione, come i polifenoli, possono avere un effetto antiossidante, proteggendo le cellule dai danni causati dai radicali liberi.',
