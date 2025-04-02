@@ -13,17 +13,13 @@ interface Warehouse {
             return_price: number;
             capacity: number;
         };
-        recipe: {
+        product: {
             id: string;
             name: string;
         };
     }
     bottle_type: string;
-    recipe: string;
     quantity: number;
-    age_of_filling: number;
-    age_of_maturity: number;
-    age_of_expiring: number;
 }
 
 export function useWarehouse() {
@@ -31,7 +27,7 @@ export function useWarehouse() {
         queryKey: [`warehouse`],
         queryFn: async (): Promise<Warehouse[]> => {
             const response = pb.collection('warehouse').getFullList({
-                expand: 'bottle_type,recipe'
+                expand: 'bottle_type,product'
             }) as any;
             return response as Warehouse[];
         }, 
@@ -44,7 +40,7 @@ export const getNameAndFormatWarehouse = (warehouse: Warehouse[] | undefined, re
     if (!warehouse) {
         return 0;
     }
-    const targets = warehouse.filter((wh) => wh.expand.recipe.name === recipeName && wh.expand.bottle_type.name === formatName);
+    const targets = warehouse.filter((wh) => wh.expand.product.name === recipeName && wh.expand.bottle_type.name === formatName);
     const quantity = targets.reduce((acc, curr) => acc + curr.quantity, 0);
     return quantity;
 }
