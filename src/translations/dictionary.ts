@@ -138,7 +138,7 @@ export const dictionary = {
         it: 'Vai al carrello'
     },
     footer_text: {
-        en: 'Ginger Gio - Probiotics beverages - powered by LionBerry',
+        en: 'Ginger Gio - Probiotics beverages - info@gingergio.it',
         it: undefined
     },
     footer_langswitch_text: {
