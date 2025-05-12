@@ -1,9 +1,8 @@
 :root {
-  --accent: #982dbf;
-  /* #3d8527 */
-  --accentDark: #640488;
-  --contrast: #fec85a;
-  --contrastDark: #f9a825;
+  --accent: #b63207;
+  --accentDark: #862405;
+  --contrast: #f7c66f;
+  --contrastDark: #ddb062;
   --disabled: #a5a5a5;
   --backgroundLight: white;
   --backgroundDark: black;
